@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="ad.size" content="width=300,height=600">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" href="bundle.css">
+	</head>
+
+	<body>
+		<script>
+			var clickTag = "http://samsung.com/";
+		</script>
+		<div id="backup" onclick="window.open(window.clickTag)"></div>
+		<div id="ad_content" class="invisible">
+
+			<div id="device" class="sprite-jpg device">
+
+				<div id="img1">
+
+					<div id="man_w">
+						<div id="man" class="sprite-png man"></div>
+					</div>
+					<svg id="circ" width="190" height="195">
+						<path id="load" d="M93.47,1.5c50.89-.09,92.22,42.11,92.31,94.27s-41.08,94.51-92,94.61S1.6,148.26,1.5,96.11,42.58,1.59,93.47,1.5Z" fill="none" stroke="#30fffc" stroke-width="4"/>
+					</svg>
+					<div id="arrow" class="sprite-jpg arrow"></div>
+					<div id="img1_ui" class="sprite-jpg img1-ui"></div>
+					<div id="next_over" class="sprite-png next_over"></div>
+				</div>
+				<div id="circ_load_w" class="invisible">
+					<div id="circ_load" class="sprite-svg circ_loading"></div>
+				</div>
+				<div id="img2" class="sprite-jpg img2">
+					<div id="img2_ui" class="sprite-jpg img2-ui"></div>
+				</div>
+			</div>
+
+			<h1 id="head1" class="txt">The emoji that’s<br>actually you.</h1>
+			<h1 id="head2" class="txt">Galaxy S9+ with<br>AR Emoji.</h1>
+			<h1 id="head_ef" class="txt">The Camera.<br>Reimagined.</h1>
+
+			<div id="ef_device_2" class="sprite-png ef-device-2"></div>
+			<div id="ef_device_1">
+				<div id="petal1" class="sprite-png petal1"></div>
+				<div id="petal2" class="sprite-png petal2"></div>
+				<div id="petal3" class="sprite-png petal3"></div>
+				<div id="petals"></div>
+				<div id="dandelion" class="sprite-png dandelion"></div>
+				<div class="sprite-png ef-device-1"></div>
+			</div>
+
+
+			<div id="cta">
+				<div id="cta_up" class="sprite-png cta-up"></div>
+				<div id="cta_over" class="sprite-png cta-over alpha-0"></div>
+			</div>
+			<div id="logo" class="sprite-svg logo"></div>
+			<div id="branding" class="sprite-svg branding"></div>
+		</div>
+		<!--[if !IE]><!-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.0/TweenMax.min.js"></script>
+			<script src="DrawSVGPlugin.min.js"></script>
+			<script src="bundle.js"></script>
+		<!--<![endif]-->
+		<!--[if IE]><script>document.getElementById('backup').className = 'backup'; /*IE9 or below*/</script><![endif]-->
+	</body>
+</html>

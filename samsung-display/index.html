@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="ad.size" content="width=300,height=600">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" href="bundle.css">
+	</head>
+
+	<body>
+		<script>
+			var clickTag = "http://samsung.com/";
+		</script>
+		<div id="backup" onclick="window.open(window.clickTag)"></div>
+		<div id="ad_content" class="invisible">
+
+			<div id="headlines">
+				<h1 id="head1">See more.</h1>
+				<h1 id="head2">Hold less.</h1>
+			</div>
+			<h1 id="head_ef">Galaxy S9+ with Infinity Display.</h1>
+
+
+			<div id="ef_device_2" class="sprite-png ef-device-2"></div>
+			<div id="ef_device_1">
+				<div id="petal1" class="sprite-png petal1"></div>
+				<div id="petal2" class="sprite-png petal2"></div>
+				<div id="petal3" class="sprite-png petal3"></div>
+				<div id="petals"></div>
+				<div id="dandelion" class="sprite-png dandelion"></div>
+				<div class="sprite-png ef-device-1"></div>
+			</div>
+
+
+			<div id="cta">
+				<div id="cta_up" class="sprite-png cta-up"></div>
+				<div id="cta_over" class="sprite-png cta-over alpha-0"></div>
+			</div>
+			<div id="logo" class="sprite-svg logo"></div>
+			<div id="branding" class="sprite-svg branding"></div>
+		</div>
+		<!--[if !IE]><!-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.0/TweenMax.min.js"></script>
+			<script src="bundle.js"></script>
+		<!--<![endif]-->
+		<!--[if IE]><script>document.getElementById('backup').className = 'backup'; /*IE9 or below*/</script><![endif]-->
+	</body>
+</html>

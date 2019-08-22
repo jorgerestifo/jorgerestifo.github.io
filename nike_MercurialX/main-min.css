@@ -1,0 +1,152 @@
+@charset "UTF-8";
+/* Modified Poor Man’s Reset
+ * -------------------------------------------------------
+ */
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+/* Utilities
+ * -------------------------------------------------------
+ */
+.alpha-0 {
+  visibility: hidden; }
+
+.gpu {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
+
+/* Variables
+ * -------------------------------------------------------
+ */
+/* Ad content
+ * -------------------------------------------------------
+ */
+#ad_content {
+  background: black;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  width: 980px;
+  height: 250px; }
+  #ad_content div, #ad_content img, #ad_content li {
+    position: absolute; }
+
+#logo {
+  left: 372px;
+  top: 19px; }
+
+#cta_up, #cta_over {
+  left: 812px;
+  top: 107px; }
+
+.backup {
+  position: absolute;
+  background: url("backup.jpg") no-repeat;
+  left: 0;
+  top: 0;
+  width: 980px;
+  height: 250px; }
+
+.sprite-png{
+  background-image: url('spritesheet.png');
+}
+
+.ef_msk {
+  background-position: -986px -552px;
+  width: 980px;
+  height: 250px;
+}
+.f2_msk1 {
+  background-position: 0px 0px;
+  width: 980px;
+  height: 270px;
+}
+.f2_msk2 {
+  background-position: 0px -276px;
+  width: 980px;
+  height: 270px;
+}
+.f2_msk3 {
+  background-position: 0px -552px;
+  width: 980px;
+  height: 270px;
+}
+.f2_msk4 {
+  background-position: -986px 0px;
+  width: 980px;
+  height: 270px;
+}
+.f2_msk5 {
+  background-position: -986px -276px;
+  width: 980px;
+  height: 270px;
+}
+
+
+.sprite-jpg{
+  background-image: url('spritesheet.jpg');
+}
+
+.ef_img {
+  background-position: -1026px 0px;
+  width: 980px;
+  height: 250px;
+}
+.f1_img {
+  background-position: 0px 0px;
+  width: 1020px;
+  height: 290px;
+}
+.f2_img {
+  background-position: 0px -592px;
+  width: 980px;
+  height: 270px;
+}
+.f3_img {
+  background-position: 0px -296px;
+  width: 1020px;
+  height: 290px;
+}
+
+
+.sprite-svg {
+	background: url("svgsprite.svg") no-repeat;
+}
+
+.cta_over {
+	background-position: 100% 0;
+	width: 133px;
+	height: 47.2px;
+}
+
+.cta_up {
+	background-position: 100% 27.96208530805687%;
+	width: 133px;
+	height: 47.2px;
+}
+
+.logo {
+	background-position: 0 0;
+	width: 248px;
+	height: 215.26px;
+}
+

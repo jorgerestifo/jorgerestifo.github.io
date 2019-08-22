@@ -1,0 +1,119 @@
+.sprite {
+  background: url('sprite-s4743ecb4e7.png');
+  position: absolute; }
+
+.cta-txt {
+  background-position: 0 0;
+  height: 11px;
+  width: 64px; }
+
+.logo {
+  background-position: -66px 0;
+  height: 9px;
+  width: 26px; }
+
+.replay {
+  background-position: -94px 0;
+  height: 12px;
+  width: 10px; }
+
+body, * {
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0; }
+
+#ad_content {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background: #000; }
+  #ad_content:hover #cta {
+    background-color: white; }
+  #ad_content:hover #cta-txt {
+    -webkit-filter: invert(100%);
+            filter: invert(100%); }
+  #ad_content * {
+    position: absolute; }
+
+.trans-500-io {
+  -webkit-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out; }
+
+.trans-1000-io {
+  -webkit-transition: all 1s ease-in-out;
+          transition: all 1s ease-in-out; }
+
+.trans-250-io {
+  -webkit-transition: all 250ms ease-in-out;
+          transition: all 250ms ease-in-out; }
+
+.alpha0 {
+  opacity: 0 !important; }
+
+#logo {
+  top: 44px;
+  right: 4px; }
+
+#cta {
+  left: 101px;
+  top: 200px;
+  width: 98px;
+  height: 30px;
+  background-color: #000; }
+
+#cta-txt {
+  top: 9px;
+  left: 17px; }
+
+#replay {
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent; }
+
+#replay_arrow {
+  top: 5px;
+  right: 5px;
+  width: 10px;
+  height: 12px;
+  margin-top: -2px;
+  -webkit-transform-origin: 5px 7px;
+      -ms-transform-origin: 5px 7px;
+          transform-origin: 5px 7px; }
+
+.replay-hover {
+  -webkit-transform: rotateZ(-360deg);
+          transform: rotateZ(-360deg); }
+
+#story {
+  width: 300px;
+  height: 250px; }
+
+.animation {
+  -webkit-animation: playVideo 2s steps(33) forwards;
+          animation: playVideo 2s steps(33) forwards; }
+
+@-webkit-keyframes playVideo {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -9900px 0px; } }
+
+@keyframes playVideo {
+  from {
+    background-position: 0 0; }
+  to {
+    background-position: -9900px 0px; } }
+#anim {
+  top: 0;
+  left: 0;
+  background: url("anim.jpg");
+  background-position: 0 0;
+  height: 250px;
+  width: 300px; }

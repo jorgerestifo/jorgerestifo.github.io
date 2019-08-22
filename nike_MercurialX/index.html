@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Banner</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="ad.size" content="width=980,height=250">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" href="main-min.css">
+	</head>
+
+	<body>
+		
+		<div id="ad_content">
+			<div id='f1_img' class="sprite-jpg f1_img alpha-0 gpu"></div>
+			<div id='f2_img' class="sprite-jpg f2_img alpha-0">
+				<div id='f2_msk1' class="sprite-png f2_msk1"></div>
+				<div id='f2_msk2' class="sprite-png f2_msk2"></div>
+				<div id='f2_msk3' class="sprite-png f2_msk3"></div>
+				<div id='f2_msk4' class="sprite-png f2_msk4"></div>
+				<div id='f2_msk5' class="sprite-png f2_msk5"></div>
+			</div>
+			<div id='f3_img' class="sprite-jpg f3_img alpha-0"></div>
+			<div id='ef_img' class="sprite-jpg ef_img alpha-0">
+				<div id='ef_msk' class="sprite-png ef_msk"></div>
+			</div>
+			
+			<div id='cta_up' class="sprite-svg cta_up alpha-0"></div>
+			<div id='cta_over' class="sprite-svg cta_over alpha-0"></div>
+			<div id='logo' class="sprite-svg logo alpha-0"></div>
+
+			<div id="backup" class=""></div>
+			
+		</div>
+	
+		<!-- Load scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+		<script>
+			
+			!function(e){"use strict";function t(){i=this}function n(e){return new RegExp("(^|\\s+)"+e+"(\\s+|$)")}var r,o,a,i;t.prototype={constructor:t,debug:!1,dom:{},trace:function(t){i.debug&&e.console&&e.console.log(t)},getTouch:function(){return void 0===a&&(a="ontouchstart"in e||navigator.maxTouchPoints>0||navigator.msMaxTouchPoints>0?!0:!1),a},getBrowser:function(){if(void 0===o){var t="WebkitAppearance"in document.documentElement.style,n=!!e.opera||/opera|opr/i.test(navigator.userAgent);o=t?e.chrome?e.chrome&&e.chrome.webstore?"Chrome 14+":n?"Opera 14+":"Android 4+":"//"==/a/.__proto__?"Safari 5-":"Safari 6+ or other Webkit":n?"Opera 13-":e.sidebar?e.globalStorage?"Firefox 13-":"Firefox 14+":e.navigator.msPointerEnabled?"IE10+":document.all&&document.addEventListener&&!e.atob?"IE9":document.all&&!document.addEventListener?"IE8-":"unknown"}return o},timerStart:function(){r=(new Date).getTime()},getMilliseconds:function(){return(new Date).getTime()-r},getSeconds:function(){return.001*((new Date).getTime()-r)},timerStop:function(){var e=(new Date).getTime()-r;i.trace("seconds elapsed: "+.001*e)},preloadImages:function(e){function t(){o++;var e=.001*((new Date).getTime()-n);c.trace("image "+o+"/"+i.length+" loaded @ "+e),o===i.length&&a(r)}for(var n=(new Date).getTime(),r=[],o=0,a=function(){},i="object"!=typeof e?[e]:e,c=this,u=0;u<i.length;u++)r[u]=new Image,r[u].onload=t,r[u].onerror=t,r[u].src=i[u];return{done:function(e){a=e||a}}},qs:function(e,t){return(t||document).querySelector(e)},qsa:function(e,t){return(t||document).querySelectorAll(e)},targ:function(e){return"string"==typeof e?i.qs(e):e},makeVar:function(e,t,n){var r;return r=n?e.replace(/-(.)|_(.)/g,function(e,t,n){var r="";return t&&(r+=t.charAt(0).toUpperCase()+t.substring(1,t.length)),n&&(r+=n.toUpperCase()),r}):e.replace(/-/g,"_"),t[r]=document.getElementById(e),t[r]},makeVars:function(e,t,n,r){for(var o=e.length,a;o--;)a=i.makeVar(e[o],t,r),n.push(a)},getAllIdElements:function(e){for(var t=e.getElementsByTagName("*"),n=[],r=t.length;r--;)t[r].hasAttribute("id")&&n.push(t[r]);return n},getAllIds:function(e,t,n){for(var r=e.getElementsByTagName("*"),o=[],a="var ",c=n||"bu",u=r.length,s=0;u>s;s++)r[s].hasAttribute("id")&&(o.push(r[s].id),t&&(a+=r[s].id.replace(/-/g,"_")+" = "+c+".qs('#"+r[s].id+"')",s>-1&&(a+=",\n    ")));return t&&(a=a.replace(/,\s([^,]+)$/,"; $1"),i.trace(a)),o},makeVarsFromIds:function(e,t,n,r){var o=i.getAllIds(e||document);i.makeVars(o,t||i.dom,n||[],r)},recordStates:function(e){(!e||e.length<1)&&(e=i.getAllIdElements(document));for(var t=e.length;t--;)e[t].cl="",e[t].cl+=e[t].className},resetStates:function(e,t){(!e||e.length<1)&&(e=i.getAllIdElements(document));for(var n=e.length;n--;)void 0!==e[n].cl?e[n].className=e[n].cl:i.trace("initial state not recorded for: "+e[n].id);if(t){var r=10*e.length;setTimeout(function(){t.apply()},r)}}},NodeList.prototype.forEach=Array.prototype.forEach;var c,u;e.addEventListener?(c=function(e,t,n,r){i.targ(e).addEventListener(t,n,r||!1)},u=function(e,t,n,r){i.targ(e).removeEventListener(t,n,r||!1)}):e.attachEvent&&(c=function(t,n,r){var o=i.targ(t);o["e"+n+r]=r,o[n+r]=function(){o["e"+n+r](e.event)},o.attachEvent("on"+n,o[n+r])},u=function(e,t,n){var r=i.targ(e);r.detachEvent("on"+t,r[t+n]),r[t+n]=null}),t.prototype.addListener=c,t.prototype.removeListener=u;var s;s=e.stopPropagation?function(e){e.stopPropagation(),e.preventDefault()}:function(e){e.returnValue=!1,e.cancelBubble=!0},t.prototype.stopPropagation=s;var l;l=e.requestAnimationFrame?function(t){return e.requestAnimationFrame(t)}:e.webkitRequestAnimationFrame?function(t){return e.webkitRequestAnimationFrame(t)}:e.MozRequestAnimationFrame?function(t){return e.MozRequestAnimationFrame(t)}:function(t){return e.setTimeout(t,17)},t.prototype.requestFrame=l;var m;m=e.cancelAnimationFrame?function(t){return e.cancelAnimationFrame(t)}:e.webkitCancelAnimationFrame?function(t){return e.webkitCancelAnimationFrame(t)}:e.MozCancelAnimationFrame?function(t){return e.MozCancelAnimationFrame(t)}:function(t){return e.clearTimeout(t)},t.prototype.cancelFrame=m;var d;d=e.getComputedStyle?function(t){return e.getComputedStyle(t)}:function(e){return i.targ(e).currentStyle},t.prototype.getStyle=d;var g,f,p;"classList"in document.documentElement?(g=function(e,t){return i.targ(e).classList.contains(t)},f=function(e,t){i.targ(e).classList.add(t)},p=function(e,t){i.targ(e).classList.remove(t)}):(g=function(e,t){return n(t).test(i.targ(e).className)},f=function(e,t){g(e,t)||(i.targ(e).className=i.targ(e).className+" "+t)},p=function(e,t){i.targ(e).className=i.targ(e).className.replace(n(t)," ")}),t.prototype.addClass=f,t.prototype.removeClass=p,t.prototype.hasClass=g,t.prototype.replaceClass=function(e,t,n){i.removeClass(e,t),i.addClass(e,n)},e.BannerUtils=t}(window);
+var Banner = {
+
+    init: function() {
+
+    'use strict';
+
+    var bu = new BannerUtils(); // utilities class
+
+    // Debug mode. Comment this line for final publishing
+    bu.debug = true;
+
+    // Log all IDs and create variables. Comment this line for final publishing
+    bu.getAllIds(document, true);
+
+    // Set up variables
+    var ad_content = bu.qs('#ad_content'),
+    tl = new TimelineMax();
+   
+    // Set banner dimensions
+   
+    var adWidth = 980,
+        adHeight = 250;
+
+
+    function preIE10Check() {
+      if (window.attachEvent && !window.navigator.msPointerEnabled) {
+        console.log('IE 9 or below detected.');
+        return true;
+      } else {
+        console.log('This browsers is not IE 9 or below. 001');
+        return false;
+      }
+    }
+
+    ////////////////////////////////////////////////////// ANIMATION //////////////////////////////////////////////////////
+
+   function frameStart() {
+      if(!preIE10Check()){
+        bu.timerStart();
+        frame0();
+      } else {
+        TweenMax.set(backup, {className:'backup'});
+      }
+    }
+
+    // this is the first frame on your animation
+   function frame0(){
+     
+      tl.to([logo,f1_img], .2, {autoAlpha:1,ease:Sine.easeIn})
+      .to(f1_img, 2, {scale:.95,x:-25,y:-30,ease:Linear.easeNone})  
+      .staggerTo([logo,f1_img], .2, {autoAlpha:0},.2,"-=.5")
+      .to(f2_img, .2, {autoAlpha:1,ease:Strong.easeIn},"-=.4")
+      .to(f2_img, 4, {y:-20},"-=.3")
+      .staggerTo([f2_msk1,f2_msk2,f2_msk3,f2_msk4,f2_msk5], 1, {alpha:0,ease:Strong.EaseIn},.3,"-=3.5")
+      .to(f2_img, .2, {autoAlpha:0},"-=1.2")
+      .to(f3_img, .2, {autoAlpha:1,ease:Sine.easeIn},"-=1.25")
+      .to(f3_img, 5, {rotation:-2,scale:1,x:-45,y:-30},"-=2.25")
+      .to(f3_img, .2, {autoAlpha:0})
+      .to(ef_img, .2, {autoAlpha:1,ease:Sine.easeIn},"-=2.25")
+      .to(ef_msk, .5, {alpha:0},"-=1.9")
+      .set(logo,{x:-305},"-=2")
+      .to(logo, .5, {autoAlpha:1},"-=2")
+      .to(cta_up, .5, {autoAlpha:1},"-=1.5")
+      
+      TweenLite.delayedCall(6.5, frameStop);
+    }
+
+    function frameStop() {
+      enableRollover();
+      bu.timerStop();
+    }
+
+
+    ////////////////////////////////////////////////////// EVENT HANDLERS //////////////////////////////////////////////////////
+
+    function onAdClick(e) {
+     // window.open(window.clickTag);
+    }
+
+   function onAdHover(e) {
+      TweenLite.set(cta_up,{autoAlpha:0})
+      TweenLite.set(cta_over,{autoAlpha:1})
+    }
+
+    function onAdOut(e) {
+      TweenLite.set(cta_up,{autoAlpha:1})
+      TweenLite.set(cta_over,{autoAlpha:0})
+    }
+
+    function adClickThru() {
+      bu.addListener(ad_content, 'click', onAdClick);
+    }
+
+    function enableRollover() {
+      bu.addListener(ad_content, 'mouseenter', onAdHover);
+      bu.addListener(ad_content, 'mouseleave', onAdOut);
+    }
+
+    function disableRollover() {
+      bu.removeListener(ad_content, 'mouseenter', onAdHover);
+      bu.removeListener(ad_content, 'mouseleave', onAdOut);
+    }
+
+
+    ////////////////////////////////////////////////////// INIT //////////////////////////////////////////////////////
+
+  //  adClickThru();
+    frameStart();
+  }
+};
+
+window.onload = function(){
+  Banner.init();
+};
+		</script>
+	</body>
+</html>

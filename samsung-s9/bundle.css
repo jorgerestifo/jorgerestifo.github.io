@@ -1,0 +1,283 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  font-size: 100%; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.alpha-0 {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+
+.invisible {
+  visibility: hidden; }
+
+.none {
+  display: none; }
+
+.offstage {
+  position: absolute;
+  left: -4000px;
+  top: -4000px; }
+
+.gpu {
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
+
+.smooth-animation {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0) rotate(0.1deg);
+          transform: translateZ(0) rotate(0.1deg); }
+
+.transform-reset {
+  -webkit-transform: none !important;
+          transform: none !important; }
+
+.center-trans {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.middle-trans {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.center-middle-trans {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.center-middle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+img, div {
+  position: absolute; }
+
+body {
+  cursor: pointer; }
+
+#ad_content {
+  font-family: Arial, sans-serif;
+  color: white;
+  background: white;
+  border: 1px solid black;
+  overflow: hidden;
+  width: 300px;
+  height: 600px; }
+
+#branding {
+  left: 20px;
+  top: 20px; }
+
+#logo {
+  left: 46px;
+  top: 105px; }
+
+#cta {
+  top: 526px;
+  width: 96px; }
+
+#text_1 {
+  left: 50px;
+  top: 146px; }
+
+#text_2 {
+  left: 154px;
+  top: 146px; }
+
+#device1 {
+  left: 16px;
+  top: 227px; }
+
+#device2 {
+  left: 112px;
+  top: 203px; }
+
+#device3 {
+  left: 192px;
+  top: 203px; }
+
+#d1petals {
+  left: 18px;
+  top: 40px;
+  width: 69px;
+  height: 200px;
+  overflow: hidden; }
+
+#d2petals {
+  left: 11px;
+  top: 80px;
+  width: 72px;
+  height: 120px;
+  overflow: hidden; }
+
+#d1p1 {
+  left: 0px;
+  top: 30px; }
+
+#d2p1 {
+  left: -65px;
+  top: 20px; }
+
+#d1p2 {
+  left: 15px;
+  top: 55px; }
+
+#d2p2, #d2p10 {
+  left: -35px;
+  top: 75px; }
+
+#d1p3 {
+  left: 7px;
+  top: 75px; }
+
+#d2p3 {
+  left: -50px;
+  top: 5px; }
+
+#d1p4 {
+  left: 32px;
+  top: 65px; }
+
+#d2p4, #d2p8, #d2p9, #d2p7 {
+  left: -25px;
+  top: 60px; }
+
+#d1p5 {
+  left: 47px;
+  top: 40px; }
+
+#d2p5 {
+  left: -47px;
+  top: 20px; }
+
+#d2p6 {
+  top: 20px; }
+
+#dandelion {
+  top: 100px;
+  left: 10px; }
+
+.backup {
+  background: url("backup.jpg") no-repeat;
+  background-position: -1px -1px;
+  width: 300px;
+  height: 600px;
+  border: 1px solid black; }
+
+.sprite-img { background-image: url(sprite-img.png) }
+.dandelion {
+  width: 76px;
+  height: 90px;
+  background-position: -306px 0px; }
+.device1 {
+  width: 98px;
+  height: 256px;
+  background-position: -107px 0px; }
+.device2 {
+  width: 101px;
+  height: 280px;
+  background-position: 0px 0px; }
+.device3 {
+  width: 89px;
+  height: 280px;
+  background-position: -211px 0px; }
+.petal1 {
+  width: 33px;
+  height: 21px;
+  background-position: -306px -136px; }
+.petal2 {
+  width: 18px;
+  height: 16px;
+  background-position: -306px -163px; }
+.petal3 {
+  width: 42px;
+  height: 34px;
+  background-position: -306px -96px; }
+.petal4 {
+  width: 32px;
+  height: 21px;
+  background-position: -345px -136px; }
+.petal5 {
+  width: 24px;
+  height: 23px;
+  background-position: -354px -96px; }
+.petal6 {
+  width: 12px;
+  height: 22px;
+  background-position: -306px -185px; }
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+
+}
+
+
+.sprite-svg {
+	background: url("sprite-svg.svg") no-repeat;
+}
+
+.branding {
+	background-position: 0 98.09878479027833%;
+	width: 89px;
+	height: 14.98px;
+}
+
+.logo {
+	background-position: 0 0;
+	width: 211px;
+	height: 31px;
+}
+
+.text_1 {
+	background-position: 0 66.02768903088392%;
+	width: 101.62px;
+	height: 19.05px;
+}
+
+.text_2 {
+	background-position: 88.8131445551477% 66.02768903088392%;
+	width: 96.58px;
+	height: 19.05px;
+}
+
