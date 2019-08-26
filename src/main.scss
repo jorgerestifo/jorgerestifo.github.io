@@ -1,0 +1,88 @@
+@import 'reset', 'utils','centering';
+
+#content {
+  background: #31a7c2;
+  cursor: pointer;
+  border: 1px solid black;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+$color4 : #d4183c;
+$color3 : #ec6609;
+$color2 : #f1ae0f;
+$color1 : #0280af;
+
+iframe {
+  border: 0;
+}
+
+#cta {
+  float: right;
+  color:white;
+  font-size: 1.5em;
+  margin: .5em;
+  text-align: right;
+  animation: cta-animation 2s;
+
+}
+
+#loader {
+  width: 25px;
+  height: 25px;
+  background: red;
+  animation: loader-animation 2s infinite;
+  display: none;
+  border-radius: 50%;
+}
+
+@keyframes loader-animation {
+  
+  0% {background: $color1;
+         transform:scale(1);
+      }
+  20% {background: $color1;
+         transform:scale(1);
+      }
+  25% { background: $color2;
+        transform:scale(1.2);
+      }
+  45% { background: $color2;
+        transform:scale(1.2);
+      }    
+  50% { background: $color3;
+        transform:scale(1.1);
+      }    
+  70% { background: $color3;
+        transform:scale(1.1);
+      }
+  75% { background: $color4;
+        transform:scale(1.4);
+      }
+  95% { background: $color4;
+        transform:scale(1.4);
+      }
+
+  100% {background: $color1;
+         transform:scale(1);
+      }            
+}
+
+@keyframes cta-animation {
+  
+  0% {font-size: 20em;
+      text-align: left;
+      }
+  49% {font-size: 20em;
+  }
+  50% {font-size: 10em;
+      }
+  99% {font-size: 10em;
+      } 
+  100% {font-size: 2em;
+      text-align: right;
+      }                 
+}
