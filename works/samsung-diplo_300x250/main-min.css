@@ -1,0 +1,173 @@
+@charset "UTF-8";
+/* Modified Poor Man’s Reset
+ * -------------------------------------------------------
+ */
+html, body, p {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+/* Utilities
+ * -------------------------------------------------------
+ */
+.visibility-off {
+  visibility: hidden; }
+
+.alpha-0 {
+  opacity: 0; }
+
+.gpu {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transform: rotate(0.1deg);
+          transform: rotate(0.1deg); }
+
+/* Variables
+ * -------------------------------------------------------
+ */
+/* Ad content
+ * -------------------------------------------------------
+ */
+#ad_content {
+  background: black;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  width: 300px;
+  height: 250px; }
+  #ad_content div, #ad_content img, #ad_content p {
+    position: absolute;
+    zoom: 1; }
+
+#bg_anim {
+  top: 0px;
+  left: -300px; }
+
+.bgDiv {
+  position: absolute;
+  background: url("triangle.svg");
+  width: 74px;
+  height: 86px; }
+
+#logo {
+  left: 119px;
+  top: 18px; }
+
+#move {
+  left: 94px;
+  bottom: 14px; }
+
+#theMixWrapper {
+  width: 155px;
+  height: 36px;
+  left: 74px;
+  top: 148px;
+  overflow: hidden; }
+
+#cta {
+  left: 77px;
+  top: 105px;
+  width: 149px;
+  height: 43px;
+  background: black;
+  border-radius: 5px;
+  border: 2px solid #FFF;
+  overflow: hidden; }
+
+#cta_text {
+  left: 27px;
+  top: 15px; }
+
+#cantStopWrapper {
+  width: 248px;
+  height: 53px;
+  left: 27px;
+  top: 85px;
+  overflow: hidden; }
+
+#dinoWrapper {
+  width: 111px;
+  height: 33px;
+  left: 98px;
+  top: 70px;
+  overflow: hidden; }
+
+#diploPresentsWrapper {
+  width: 209px;
+  height: 16px;
+  left: 46px;
+  top: 125px;
+  overflow: hidden; }
+
+.backup {
+  position: absolute;
+  background: url("backup.jpg") no-repeat;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 250px; }
+
+.sprite-png{
+  background-image: url('spritesheet.png');
+}
+
+.logo {
+  background-position: 0px 0px;
+  width: 62px;
+  height: 10px;
+}
+
+
+.cantStop {
+	background: url("svgsprite.svg") 0 0 no-repeat;
+	width: 247.88px;
+	height: 52.38px;
+}
+
+.cta_text {
+	background: url("svgsprite.svg") 74.47624083008394% 74.13569576490924% no-repeat;
+	width: 96.69px;
+	height: 13.16px;
+}
+
+.dino {
+	background: url("svgsprite.svg") 0 99.28774928774928% no-repeat;
+	width: 111px;
+	height: 32.66px;
+}
+
+.diploPresents {
+	background: url("svgsprite.svg") 0 38.32589449037829% no-repeat;
+	width: 208.55px;
+	height: 15.33px;
+}
+
+.move {
+	background: url("svgsprite.svg") 0 75.43975373790677% no-repeat;
+	width: 112.69px;
+	height: 15.56px;
+}
+
+.theMix {
+	background: url("svgsprite.svg") 0 57.98081863332763% no-repeat;
+	width: 154.97px;
+	height: 35.22px;
+}
+

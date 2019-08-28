@@ -1,0 +1,212 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  font-size: 100%; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.alpha-0 {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+
+.invisible {
+  visibility: hidden; }
+
+.none {
+  display: none; }
+
+.offstage {
+  position: absolute;
+  left: -4000px;
+  top: -4000px; }
+
+.gpu {
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
+
+.smooth-animation {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0) rotate(0.1deg);
+          transform: translateZ(0) rotate(0.1deg); }
+
+.transform-reset {
+  -webkit-transform: none !important;
+          transform: none !important; }
+
+/* Ad content
+ * -------------------------------------------------------
+ */
+#ad_content {
+  background: black;
+  border: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  width: 300px;
+  height: 250px; }
+  #ad_content div, #ad_content img, #ad_content li {
+    position: absolute; }
+
+#question {
+  top: 30px;
+  left: 30px; }
+
+#logo_samsung {
+  top: 12px;
+  left: 12px; }
+
+#logo_samsung8 {
+  top: 12px;
+  right: 12px; }
+
+#device {
+  left: 42px;
+  top: 116px; }
+  #device #device_txt1, #device #device_txt2 {
+    top: 28px;
+    left: 70px; }
+
+#questionMark {
+  -webkit-transform: scale(0.26);
+          transform: scale(0.26);
+  top: 24px;
+  left: 132px;
+  width: 31px;
+  height: 82px;
+  background: url("questionMark.png") left center; }
+
+@-webkit-keyframes play {
+  100% {
+    background-position: -217px; } }
+
+@keyframes play {
+  100% {
+    background-position: -217px; } }
+
+.questionMark_play {
+  -webkit-animation: play steps(7) 0.5s forwards;
+          animation: play steps(7) 0.5s forwards; }
+
+#pen {
+  left: 168px;
+  top: 91px; }
+
+#f2_txta {
+  left: 88px;
+  top: 34px; }
+
+#f2_txtb {
+  left: 74px;
+  top: 56px; }
+
+#ef_txt {
+  left: 75px;
+  top: 34px; }
+
+#cta {
+  left: 81px;
+  top: 65px; }
+
+.sprite-png{
+  background-image: url('spritesheet.png');
+}
+
+.device {
+  background-position: -166px 0px;
+  width: 219px;
+  height: 101px;
+}
+.pen {
+  background-position: 0px 0px;
+  width: 160px;
+  height: 221px;
+}
+.underline {
+  background-position: -166px -107px;
+  width: 49px;
+  height: 7px;
+}
+
+
+.sprite-jpg{
+  background-image: url('spritesheet.jpg');
+}
+
+.bg1 {
+  background-position: 0px 0px;
+  width: 300px;
+  height: 250px;
+}
+.bg2 {
+  background-position: 0px -256px;
+  width: 300px;
+  height: 250px;
+}
+
+
+.sprite-svg {
+	background: url("svgsprite.svg") no-repeat;
+}
+
+.device_txt1 {
+	background-position: 99.96155324875048% 0;
+	width: 75.94px;
+	height: 56.38px;
+}
+
+.device_txt2 {
+	background-position: 0 99.57146458280816%;
+	width: 77.38px;
+	height: 51.66px;
+}
+
+.ef_txt {
+	background-position: 0 22.33009708737864%;
+	width: 153px;
+	height: 28px;
+}
+
+.f2_txta {
+	background-position: 0 49.51456310679612%;
+	width: 124px;
+	height: 28px;
+}
+
+.f2_txtb {
+	background-position: 0 0;
+	width: 156px;
+	height: 23px;
+}
+
+.logo_samsung {
+	background-position: 91.76470588235294% 47.05784158250563%;
+	width: 62px;
+	height: 11.19px;
+}
+
+.logo_samsung8 {
+	background-position: 49.92258064516129% 66.97753285290378%;
+	width: 77px;
+	height: 13.05px;
+}
+

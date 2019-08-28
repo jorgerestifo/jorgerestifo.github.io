@@ -1,0 +1,48 @@
+<html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="ad.size" content="width=300,height=250">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" href="bundle.css">
+	</head>
+
+	<body>
+		<script>
+			var clickTag = "http://samsung.com/";
+		</script>
+		<div id="backup" onclick="window.open(window.clickTag)"></div>
+		<div id="ad_content" class="invisible">
+			
+			<div id="card" class="sprite-png card"></div>
+			<div id="device" class="sprite-jpg device">
+				<div id="t1" class="sprite-jpg t1"></div>
+				<div id="t2" class="sprite-jpg t2"></div>
+				<div id="t3" class="sprite-jpg t3"></div>
+				<div id="t4" class="sprite-jpg t4"></div>
+			</div>
+
+
+
+			<!-- <h1 id="head1" class="txt">Forget what<br>it’s like to run<br>out of space.<br></h1> -->
+			<h1 id="head1" class="txt">Keep it all.</h1>
+			<h1 id="head_ef" class="txt">Galaxy S9+ with<br>expandable<br>storage.</h1>
+
+			<div id="cta">
+				<div id="cta_up" class="sprite-png cta-up"></div>
+				<div id="cta_over" class="sprite-png cta-over alpha-0"></div>
+			</div>
+			<div id="logo" class="sprite-svg logo"></div>
+			<div id="branding" class="sprite-svg branding"></div>
+			<div id="legal">*MicroSD card sold separately.<br>Galaxy S9 and S9+ come with<br>64GB of storage.</div>
+
+		</div>
+		<!--[if !IE]><!-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.0/TweenMax.min.js"></script>
+			<script src="bundle.js"></script>
+		<!--<![endif]-->
+		<!--[if IE]><script>document.getElementById('backup').className = 'backup'; /*IE9 or below*/</script><![endif]-->
+	</body>
+</html>

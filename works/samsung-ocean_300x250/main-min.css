@@ -1,0 +1,255 @@
+@charset "UTF-8";
+/* Modified Poor Man’s Reset
+ * -------------------------------------------------------
+ */
+html, body, p {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+/* Utilities
+ * -------------------------------------------------------
+ */
+.visibility-off {
+  visibility: hidden; }
+
+.alpha-0 {
+  opacity: 0; }
+
+.gpu {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transform: rotate(0.1deg);
+          transform: rotate(0.1deg); }
+
+/* Variables
+ * -------------------------------------------------------
+ */
+/* Ad content
+ * -------------------------------------------------------
+ */
+#ad_content {
+  background: black;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  width: 300px;
+  height: 250px; }
+  #ad_content div, #ad_content img, #ad_content p {
+    position: absolute;
+    zoom: 1; }
+
+#samsung_logo {
+  left: 10px;
+  top: 10px; }
+
+#headline1 {
+  left: 10px;
+  top: 98px; }
+
+#headline2 {
+  left: 10px;
+  top: 108px; }
+
+#headline_ef {
+  left: 10px;
+  top: 125px; }
+
+#legal {
+  left: 10px;
+  top: 227px; }
+
+#suhd_logo {
+  left: 10px;
+  top: 75px; }
+
+#tv {
+  -webkit-transform-origin: top left;
+          transform-origin: top left; }
+
+#image1 {
+  -webkit-transform-origin: top left;
+          transform-origin: top left; }
+
+.tv_start {
+  left: -50px;
+  top: -260px; }
+
+.tv_end {
+  -webkit-transform: scale(0.34);
+          transform: scale(0.34);
+  left: 160px;
+  top: -10px; }
+
+.image_start {
+  left: 0;
+  top: 0; }
+
+.image_end {
+  -webkit-transform: scale(0.46, 0.825);
+          transform: scale(0.46, 0.825);
+  left: 145px;
+  top: -10px; }
+
+#cta {
+  left: 10px;
+  top: 180px;
+  width: 32px;
+  height: 31px; }
+
+#cta_over {
+  left: 9px;
+  top: 179px; }
+
+#cta_border {
+  left: 0;
+  top: 0;
+  margin: -1px; }
+
+#cta_border_holder_left {
+  left: 0;
+  top: 0;
+  width: 16px;
+  height: 32px;
+  overflow: hidden; }
+
+#cta_border_holder_right {
+  left: 16px;
+  top: 0;
+  width: 16px;
+  height: 32px;
+  overflow: hidden;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom; }
+
+#cta_border_left {
+  left: 0;
+  top: 0;
+  margin: -1px; }
+
+#cta_border_right {
+  left: 0;
+  top: 0;
+  margin: -1px; }
+
+#cta_arrow {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  left: -16px;
+  top: 0;
+  width: 32px;
+  height: 32px; }
+
+.backup {
+  position: absolute;
+  background: url("backup.jpg") no-repeat;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 250px; }
+
+.sprite-png{
+  background-image: url('spritesheet.png');
+}
+
+.tv {
+  background-position: 0px 0px;
+  width: 406px;
+  height: 763px;
+}
+
+
+.sprite-jpg{
+  background-image: url('spritesheet.jpg');
+}
+
+.image1 {
+  background-position: 0px 0px;
+  width: 300px;
+  height: 275px;
+}
+
+
+.cta_arrow {
+	background: url("svgsprite.svg") 77.92592592592592% 94.3586956521739% no-repeat;
+	width: 32px;
+	height: 32px;
+}
+
+.cta_border {
+	background: url("svgsprite.svg") 87.31550802139037% 58.67777777777778% no-repeat;
+	width: 34px;
+	height: 34px;
+}
+
+.cta_border_left {
+	background: url("svgsprite.svg") 63.68472906403941% 96.45555555555555% no-repeat;
+	width: 18px;
+	height: 34px;
+}
+
+.cta_border_right {
+	background: url("svgsprite.svg") 97.18226600985221% 58.67777777777778% no-repeat;
+	width: 18px;
+	height: 34px;
+}
+
+.cta_over {
+	background: url("svgsprite.svg") 69.1336898395722% 58.67777777777778% no-repeat;
+	width: 34px;
+	height: 34px;
+}
+
+.headline1 {
+	background: url("svgsprite.svg") 0 0 no-repeat;
+	width: 129.28px;
+	height: 57.59px;
+}
+
+.headline2 {
+	background: url("svgsprite.svg") 99.49207326458365% 0 no-repeat;
+	width: 91.06px;
+	height: 40.84px;
+}
+
+.headline_ef {
+	background: url("svgsprite.svg") 0 54.65502514947328% no-repeat;
+	width: 127.88px;
+	height: 18.63px;
+}
+
+.legal {
+	background: url("svgsprite.svg") 0 67.45132743362832% no-repeat;
+	width: 102px;
+	height: 11px;
+}
+
+.samsung_logo {
+	background: url("svgsprite.svg") 82.82401178807098% 36.454521110416856% no-repeat;
+	width: 64.91px;
+	height: 11.97px;
+}
+
+.suhd_logo {
+	background: url("svgsprite.svg") 0 99.68% no-repeat;
+	width: 102px;
+	height: 36.5px;
+}
+

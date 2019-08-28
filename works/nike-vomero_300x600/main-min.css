@@ -1,0 +1,125 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  font-size: 100%; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+*, *:before, *:after {
+  box-sizing: border-box; }
+
+.alpha-0 {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+
+.invisible {
+  visibility: hidden; }
+
+.none {
+  display: none; }
+
+.offstage {
+  position: absolute;
+  left: -4000px;
+  top: -4000px; }
+
+.gpu {
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
+
+.smooth-animation {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0) rotate(0.1deg);
+          transform: translateZ(0) rotate(0.1deg); }
+
+.transform-reset {
+  -webkit-transform: none !important;
+          transform: none !important; }
+
+/* Utilities
+ * -------------------------------------------------------
+ */
+/* Ad content
+ * -------------------------------------------------------
+ */
+#ad_content {
+  background: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  width: 300px;
+  height: 600px; }
+  #ad_content div, #ad_content img, #ad_content p {
+    position: absolute;
+    zoom: 1; }
+
+.backup {
+  position: absolute;
+  background: url("backup.jpg") no-repeat;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 600px; }
+
+#headline {
+  left: 15px;
+  top: 15px; }
+
+#subline {
+  left: 47px;
+  top: 218px; }
+
+#tilde {
+  left: 119px;
+  top: 244px; }
+
+#cta {
+  left: 185px;
+  top: 549px;
+  width: 100px;
+  height: 36px;
+  border: 1px solid black; }
+
+#anim {
+  width: 300px;
+  height: 600px;
+  background: url("anim.png"); }
+
+.sprite-svg {
+	background: url("svgsprite.svg") no-repeat;
+}
+
+.headline {
+	background-position: 0 0;
+	width: 271.39px;
+	height: 186.95px;
+}
+
+.subline {
+	background-position: 0 88.03446976831795%;
+	width: 206.35px;
+	height: 20.64px;
+}
+
+.tilde {
+	background-position: 0 99.53967873411649%;
+	width: 66.07px;
+	height: 24.45px;
+}
+

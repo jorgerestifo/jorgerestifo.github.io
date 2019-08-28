@@ -1,0 +1,230 @@
+.sprite {
+  background: url('sprite-s34818388f9.png');
+  position: absolute; }
+
+.cta-text {
+  background-position: 0 0;
+  height: 17px;
+  width: 91px; }
+
+.logo {
+  background-position: -93px 0;
+  height: 34px;
+  width: 72px; }
+
+.replay {
+  background-position: -167px 0;
+  height: 12px;
+  width: 10px; }
+
+.txt1 {
+  background-position: -179px 0;
+  height: 110px;
+  width: 186px; }
+
+.txt2 {
+  background-position: -367px 0;
+  height: 20px;
+  width: 177px; }
+
+.txt3 {
+  background-position: -546px 0;
+  height: 20px;
+  width: 145px; }
+
+.txt4 {
+  background-position: -693px 0;
+  height: 19px;
+  width: 188px; }
+
+body, * {
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0; }
+
+#ad_content {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  overflow: hidden;
+  box-sizing: border-box;
+  border: 1px solid black;
+  background: #000; }
+  #ad_content:hover #cta {
+    background-color: #cccccc; }
+
+.trans-imgs {
+  -webkit-transition: -webkit-transform 3s ease-out, opacity 1s;
+          transition: transform 3s ease-out, opacity 1s; }
+
+.trans-img5 {
+  -webkit-transition: -webkit-transform 1s ease-out, opacity 1s;
+          transition: transform 1s ease-out, opacity 1s; }
+
+.trans-500-io {
+  -webkit-transition: all .5s ease-in-out;
+          transition: all .5s ease-in-out; }
+
+.trans-250-io {
+  -webkit-transition: all 250ms ease-in-out;
+          transition: all 250ms ease-in-out; }
+
+.alpha0 {
+  opacity: 0 !important; }
+
+.vis-off {
+  visibility: hidden; }
+
+#txt1 {
+  position: absolute;
+  top: 69px;
+  left: 57px; }
+
+#img1a {
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 350px;
+  height: 250px;
+  background: url("img1a.jpg"); }
+
+#img1b {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 250px;
+  background: url("img1b.png"); }
+
+.img1aPan {
+  -webkit-transform: translateX(20px);
+      -ms-transform: translateX(20px);
+          transform: translateX(20px); }
+
+.img1bPan {
+  -webkit-transform: translateX(-30px) rotate(-5deg);
+      -ms-transform: translateX(-30px) rotate(-5deg);
+          transform: translateX(-30px) rotate(-5deg); }
+
+.img2Pan {
+  -webkit-transform: translateX(-35px);
+      -ms-transform: translateX(-35px);
+          transform: translateX(-35px); }
+
+.img3Pan {
+  -webkit-transform: translateX(35px);
+      -ms-transform: translateX(35px);
+          transform: translateX(35px); }
+
+.img4Pan {
+  -webkit-transform: translateX(-22px);
+      -ms-transform: translateX(-22px);
+          transform: translateX(-22px); }
+
+.img5Pan {
+  -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+          transform: translateY(20px); }
+
+.downUp {
+  -webkit-transform: translateY(-10px);
+      -ms-transform: translateY(-10px);
+          transform: translateY(-10px); }
+
+#txt2 {
+  position: absolute;
+  top: 116px;
+  left: 67px; }
+
+#img2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 350px;
+  height: 250px;
+  background: url("img2.jpg"); }
+
+#txt3 {
+  position: absolute;
+  top: 116px;
+  left: 77px; }
+
+#img3 {
+  position: absolute;
+  top: 0;
+  left: -35px;
+  width: 342px;
+  height: 250px;
+  background: url("img3.jpg"); }
+
+#txt4 {
+  position: absolute;
+  top: 116px;
+  left: 58px; }
+
+#img4 {
+  position: absolute;
+  top: 0;
+  left: 0px;
+  width: 349px;
+  height: 250px;
+  background: url("img4.jpg"); }
+
+#img5 {
+  position: absolute;
+  top: -20px;
+  left: 0;
+  width: 300px;
+  height: 270px;
+  background: url("img5.jpg"); }
+
+.logoPos1 {
+  position: absolute;
+  top: 105px;
+  left: 115px; }
+
+.logoPos2 {
+  position: absolute;
+  top: 39px;
+  left: 115px; }
+
+#cta {
+  position: absolute;
+  left: 84px;
+  top: 165px;
+  width: 132px;
+  height: 42px;
+  background-color: #fff; }
+
+#cta-txt {
+  top: 11px;
+  left: 19px; }
+
+#replay {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background: transparent; }
+
+#replay_arrow {
+  top: 5px;
+  right: 5px;
+  width: 10px;
+  height: 12px;
+  margin-top: -2px;
+  -webkit-transform-origin: 5px 7px;
+      -ms-transform-origin: 5px 7px;
+          transform-origin: 5px 7px; }
+
+.replay-hover {
+  -webkit-transform: rotateZ(-360deg);
+          transform: rotateZ(-360deg); }
+
+#story {
+  width: 300px;
+  height: 250px;
+  background: url(5.jpg); }

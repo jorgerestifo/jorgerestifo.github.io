@@ -1,0 +1,229 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  font-size: 100%; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.alpha-0 {
+  opacity: 0; }
+
+.invisible {
+  visibility: hidden; }
+
+.none {
+  display: none; }
+
+.offstage {
+  position: absolute;
+  left: -4000px;
+  top: -4000px; }
+
+.gpu {
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
+
+.smooth-animation {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0) rotate(0.1deg);
+          transform: translateZ(0) rotate(0.1deg); }
+
+.transform-reset {
+  -webkit-transform: none !important;
+      -ms-transform: none !important;
+          transform: none !important; }
+
+.anti-alias, .white-text-alias-mac {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.center-trans {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.middle-trans {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.center-middle-trans {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.center-middle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+img, div {
+  position: absolute; }
+
+body {
+  cursor: pointer; }
+
+#ad_content {
+  font-family: Arial, sans-serif;
+  color: white;
+  background: black;
+  border: 1px solid black;
+  overflow: hidden;
+  width: 300px;
+  height: 250px; }
+
+#branding {
+  bottom: 13px;
+  right: 10px; }
+
+#box1 {
+  width: 163px;
+  height: 28px;
+  background-color: #79276a;
+  border-radius: 5px;
+  left: 13px;
+  top: 157px; }
+
+#box2 {
+  width: 175px;
+  height: 38px;
+  background-color: #23ace4;
+  border-radius: 5px;
+  left: 13px;
+  top: 195px; }
+
+#box3 {
+  width: 158px;
+  height: 74px;
+  background-color: #bf1466;
+  border-radius: 5px;
+  left: 13px;
+  top: 160px; }
+
+#box4 {
+  width: 169px;
+  height: 128px;
+  background-color: #bf1466;
+  border-radius: 5px;
+  left: 13px;
+  top: 103px; }
+
+#cta {
+  width: 128px;
+  height: 32px;
+  background-color: #1aa8dc;
+  border-radius: 5px;
+  left: 13px;
+  bottom: 16px; }
+
+.backup {
+  background: url("backup.jpg") no-repeat;
+  background-position: -1px -1px;
+  width: 300px;
+  height: 250px;
+  border: 1px solid black; }
+
+.sprite-jpg { background-image: url('sprite.jpg') }
+.bg1 {
+  width: 300px;
+  height: 250px;
+  background-position: 0px 0px; }
+.bg2 {
+  width: 300px;
+  height: 250px;
+  background-position: -306px 0px; }
+.bg3 {
+  width: 300px;
+  height: 250px;
+  background-position: 0px -256px; }
+.bg4 {
+  width: 300px;
+  height: 250px;
+  background-position: -306px -256px; }
+@media (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 120dpi) {
+
+}
+
+
+.sprite-svg {
+	background: url("sprite.svg") no-repeat;
+}
+
+.branding {
+	background-position: 80.38503450780966% 60.59405940594059%;
+	width: 89.29px;
+	height: 33px;
+}
+
+.cta_txt {
+	background-position: 89.5588830433023% 38.93129770992366%;
+	width: 109.03px;
+	height: 14.79px;
+}
+
+.txt1 {
+	background-position: 0 15.646831074825352%;
+	width: 147.63px;
+	height: 15.19px;
+}
+
+.txt2 {
+	background-position: 0 0;
+	width: 154.91px;
+	height: 18.59px;
+}
+
+.txt3 {
+	background-position: 99.74245058270556% 0;
+	width: 126.69px;
+	height: 46.41px;
+}
+
+.txt4 {
+	background-position: 0 99.14881127091284%;
+	width: 143.75px;
+	height: 99.93px;
+}
+

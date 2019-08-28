@@ -1,0 +1,323 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  font-size: 100%; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.alpha-0 {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+
+.invisible {
+  visibility: hidden; }
+
+.none {
+  display: none; }
+
+.offstage {
+  position: absolute;
+  left: -4000px;
+  top: -4000px; }
+
+.gpu {
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
+
+.smooth-animation {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0) rotate(0.1deg);
+          transform: translateZ(0) rotate(0.1deg); }
+
+.transform-reset {
+  -webkit-transform: none !important;
+          transform: none !important; }
+
+.center-trans {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.middle-trans {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.center-middle-trans {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.center-middle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+#ad_content {
+  background: #6666ff;
+  border: 1px solid #666;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+  #ad_content div, #ad_content img, #ad_content li, #ad_content canvas, #ad_content svg {
+    position: absolute; }
+
+#txt1, #txt_ef {
+  top: 428px; }
+
+#txt2, #txt3, #txt4, #txt5, #txt6 {
+  top: 450px; }
+
+#box {
+  left: -2px;
+  top: 90px; }
+
+#box_bottom {
+  top: 105px;
+  left: 63px; }
+
+#box_top {
+  top: 42px;
+  left: 61px; }
+
+#confeti_box {
+  top: -220px; }
+
+#confeti {
+  -webkit-transform-origin: 50% 0%;
+          transform-origin: 50% 0%; }
+
+.anchor {
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%; }
+
+#bg_fix {
+  top: 435px;
+  background: #6666ff;
+  width: 257px;
+  height: 86px; }
+
+#ef_fix {
+  top: 405px;
+  background: #6666ff;
+  width: 257px;
+  height: 126px; }
+
+#logo_fix {
+  left: 9px;
+  top: 9px;
+  background: #6666ff;
+  width: 287px;
+  height: 86px; }
+
+#img1 {
+  top: -12px;
+  left: 3px; }
+
+#img6 {
+  left: -20px; }
+
+#circ {
+  width: 215px;
+  height: 215px;
+  background-color: #33ccff;
+  border-radius: 200px;
+  left: 44px;
+  top: 129px; }
+
+#branding {
+  left: 18px;
+  top: 13px; }
+
+#cta {
+  left: 85px;
+  top: 505px;
+  width: 132px;
+  height: 40px; }
+  #cta #cta_bg {
+    width: 100%;
+    height: 100%;
+    background-color: #ff6633;
+    border-radius: 50px; }
+  #cta #cta_txt {
+    top: 13px; }
+
+#legal {
+  bottom: 9px;
+  left: 18px; }
+
+.backup {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  background: url("backup.jpg") -1px -1px no-repeat;
+  background-size: 300px 600px;
+  border: 1px solid black;
+  cursor: pointer; }
+
+.sprite-png { background-image: url(sprite.png) }
+.box_bottom {
+  width: 191px;
+  height: 144px;
+  background-position: -432px -745px; }
+.box_top {
+  width: 180px;
+  height: 58px;
+  background-position: -352px -606px; }
+.branding {
+  width: 267px;
+  height: 70px;
+  background-position: -306px 0px;
+  background-size: 573px 478.5px; }
+.confeti_1 {
+  width: 300px;
+  height: 600px;
+  background-position: 0px 0px; }
+.confeti_2 {
+  width: 300px;
+  height: 600px;
+  background-position: -306px 0px; }
+.confeti_box {
+  width: 346px;
+  height: 133px;
+  background-position: 0px -606px; }
+.img1 {
+  width: 208px;
+  height: 230px;
+  background-position: -612px -361px; }
+.img2 {
+  width: 212px;
+  height: 212px;
+  background-position: -826px -361px; }
+.img3 {
+  width: 212px;
+  height: 212px;
+  background-position: 0px -745px; }
+.img4 {
+  width: 208px;
+  height: 209px;
+  background-position: -218px -745px; }
+.img5 {
+  width: 227px;
+  height: 209px;
+  background-position: -890px -146px; }
+.img6 {
+  width: 272px;
+  height: 209px;
+  background-position: -612px -146px; }
+.legal {
+  width: 90px;
+  height: 8px;
+  background-position: -1044px -361px; }
+
+.logo {
+  width: 110px;
+  height: 51px;
+  background-position: -538px -606px; }
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  .legal {
+    width: 90px;
+    height: 8px;
+    background-position: -327px -303px;
+    background-size: 573px 478.5px; }
+}
+
+
+.sprite-svg {
+	background: url("sprite.svg") no-repeat;
+}
+
+.txt1 {
+	background-position: 0 0;
+	width: 242.63px;
+	height: 65.22px;
+}
+
+.txt2 {
+	background-position: 97.77159896840747% 22.663004780795443%;
+	width: 146.84px;
+	height: 19.38px;
+}
+
+.txt3 {
+	background-position: 85.21705535262713% 32.51958091750585%;
+	width: 110.28px;
+	height: 19.38px;
+}
+
+.txt4 {
+	background-position: 0 99.47862356621481%;
+	width: 171.5px;
+	height: 43.38px;
+}
+
+.txt5 {
+	background-position: 99.83541126609883% 0;
+	width: 151.97px;
+	height: 44.56px;
+}
+
+.txt6 {
+	background-position: 0 74.17172188520766%;
+	width: 179.75px;
+	height: 44.56px;
+}
+
+.txt_cta {
+	background-position: 81.79826040051243% 41.15787393795693%;
+	width: 98.38px;
+	height: 13.56px;
+}
+
+.txt_ef {
+	background-position: 0 42.334155523821885%;
+	width: 236.69px;
+	height: 61.94px;
+}
+

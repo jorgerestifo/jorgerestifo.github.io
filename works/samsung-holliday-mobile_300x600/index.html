@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Banner</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="ad.size" content="width=300,height=600">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" href="main-min.css">
+	</head>
+
+	<body>
+		<script>
+			var clickTag = '#';
+		</script>
+		<div id="ad_content" class="visibility-off">
+
+			<div id='tv' class=''></div>
+			<div id='tv_lowres' class='gpu alpha-0'></div>
+
+			<div id='logo_samsung' class="sprite-svg logo_samsung"></div>
+			<div id='logo_galaxys7edge' class="sprite-svg logo_galaxys7edge"></div>
+			<div id='headline_ef' class="sprite-svg headline_ef alpha-0"></div>
+			<div id='box' class="sprite-png box">
+				<div id='screen'>
+					<div id='slope' class="sprite-svg slope"></div>
+					<!-- <div id='penguin_shadow' class="sprite-svg penguin_shadow"></div> -->
+					<div id='penguin' class="alpha-0">
+						<div id='snow1' class="sprite-svg snow snowstart"></div>
+						<div id='snow2' class="sprite-svg snow snowstart"></div>
+						<div id='snow3' class="sprite-svg snow snowstart"></div>
+						<div id='snow_final' class="sprite-svg snow_final alpha-0"></div>
+						<div id='scarf' class="sprite-svg scarf"></div>
+						<div id='body' class="sprite-svg body"></div>
+						<div id='headwing' class="sprite-svg headwing"></div>
+					</div>
+
+					<div id='star1' class="sprite-svg star"></div>
+					<div id='star2' class="sprite-svg star"></div>
+					<div id='star3' class="sprite-svg star"></div>
+					<div id='star4' class="sprite-svg star"></div>
+					<div id='frame' class="sprite-png frame"></div>
+				</div>
+			</div>
+			<div id='lid'>
+				<div id='lidtop' class="sprite-png lidtop"></div>
+				<div id='lidlip' class="sprite-png lidlip alpha-0"></div>
+			</div>
+
+			<div id='cta_holder'>
+				<svg id='cta_svg'>
+					<rect id='cta_box' x='1' y='1' width='30' height='30' rx='15' ry='15' fill='none' stroke='black' stroke-width='1.2'/>
+				</svg>
+
+				<!-- <div id='cta_arrow' class="sprite-svg cta_arrow"></div> -->
+			</div>
+
+			<div id='arrow_holder'>
+				<svg id='arrow_svg'>
+					<polyline id='arrow' points='14 10 19 16 14 22' stroke='black' stroke-width='1.2' stroke-linecap='butt' stroke-linejoin='miter' fill='none'/>
+				</svg>
+			</div>
+
+
+			<div id='legal' class="sprite-svg legal alpha-0"></div>
+			<div id="backup" class="backup alpha-0"></div>
+			<div id='blocker'></div>
+		</div>
+		<!-- Load scripts -->
+		<script src="DrawSVGPlugin.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+		<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/findShapeIndex.js"></script>
+		<script src="main-min.js"></script>
+	</body>
+</html>

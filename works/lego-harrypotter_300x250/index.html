@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Banner</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="ad.size" content="width=300,height=250">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+
+  <body>
+    <div id="backup" onclick="window.open(window.clickTag || window.clickTag)"></div>
+    <div id="ad_content" class="invisible">
+      <div id="background" class="sprite-png background"></div>
+      <div id="background_2" class="sprite-png background_2"></div>
+      <div id="background_dark" class=""></div>
+      <div id="logo_lego" class="sprite-png logo_lego"></div>
+      <div id="text_1" class="sprite-png text_1"></div>
+      <div id="logo_wizard" class="sprite-png logo_wizard"></div>
+
+      <div id="character" class="center">
+        <div id="eyes">
+          <div id="top_eyelid" class=""></div>
+          <div id="bottom_eyelid" class=""></div>
+        </div>
+      </div>
+      <div id="product" class="sprite-png product center"></div>
+      <div id="text_legal" class="sprite-png text_legal"></div>
+
+      <div id="cta" class="center">
+        <div id="text_cta" class="sprite-png text_cta center-middle"></div>
+        <div id="text_cta_over" class="sprite-png text_cta_over invisible center-middle"></div>
+      </div>
+      <div id="border" class="sprite-png border"></div>
+
+
+
+    </div>
+
+    <!--[if !IE]><!-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="bundle.js"></script>
+    <!--<![endif]-->
+    <!--[if IE]>
+      <script>
+        document.getElementById('backup').className = 'backup'; // IE9 or below
+      </script>
+      <![endif]-->
+  </body>
+
+</html>

@@ -1,0 +1,282 @@
+@charset "UTF-8";
+/* Modified Poor Man’s Reset
+ * -------------------------------------------------------
+ */
+html, body, p {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+/* Utilities
+ * -------------------------------------------------------
+ */
+.visibility-off {
+  visibility: hidden; }
+
+.alpha-0 {
+  opacity: 0; }
+
+.gpu {
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  -webkit-transform: rotate(0.01deg);
+          transform: rotate(0.01deg); }
+
+/* Variables
+ * -------------------------------------------------------
+ */
+/* Ad content
+ * -------------------------------------------------------
+ */
+#ad_content {
+  background: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  width: 300px;
+  height: 600px; }
+  #ad_content div, #ad_content img, #ad_content p {
+    position: absolute;
+    zoom: 1; }
+
+#blocker {
+  background-color: white;
+  width: 300px;
+  height: 600px; }
+
+#logo_samsung {
+  left: 20px;
+  top: 20px; }
+
+#logo_galaxys7edge {
+  right: 20px;
+  top: 20px; }
+
+#box {
+  left: -24px;
+  top: 158px; }
+
+#lid {
+  left: -17px;
+  top: 134px;
+  width: 292px;
+  height: 380px; }
+
+#screen {
+  width: 113px;
+  height: 195px;
+  left: 116px;
+  top: 51px;
+  overflow: hidden; }
+
+#slope {
+  left: -680px;
+  top: -96px; }
+
+#penguin {
+  width: 58px;
+  height: 30px; }
+
+.penguinposition {
+  left: 42px;
+  top: 122px; }
+
+#scarf {
+  -webkit-transform-origin: 95% 95%;
+          transform-origin: 95% 95%;
+  left: 11px;
+  top: 2px; }
+
+#body {
+  left: 0;
+  bottom: 0; }
+
+#headwing {
+  -webkit-transform-origin: 53% bottom;
+          transform-origin: 53% bottom;
+  right: 0;
+  top: 0; }
+
+.snowstart {
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  left: 1px;
+  top: -10px; }
+
+#snow_final {
+  left: -40px;
+  top: -30px; }
+
+#star1 {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  left: 36px;
+  top: 24px; }
+
+#star2 {
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  left: 92px;
+  top: 40px; }
+
+#star3 {
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
+  left: 73px;
+  top: 54px; }
+
+#star4 {
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  left: 89px;
+  top: 95px; }
+
+#headline_ef {
+  left: 20px;
+  top: 80px; }
+
+#legal {
+  left: 20px;
+  top: 570px; }
+
+#cta_holder, #arrow_holder {
+  left: 20px;
+  top: 166px;
+  width: 32px;
+  height: 32px; }
+
+.backup {
+  position: absolute;
+  background: url("backup.jpg") no-repeat;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: 600px; }
+
+.sprite-png{
+  background-image: url('spritesheet.png');
+}
+
+.box {
+  background-position: 0px -386px;
+  width: 273px;
+  height: 390px;
+}
+.frame {
+  background-position: -279px -386px;
+  width: 113px;
+  height: 195px;
+}
+.lidlip {
+  background-position: 0px 0px;
+  width: 292px;
+  height: 380px;
+}
+.lidtop {
+  background-position: -298px 0px;
+  width: 292px;
+  height: 380px;
+}
+
+
+.sprite-jpg{
+  background-image: url('spritesheet.jpg');
+}
+
+.image1 {
+  background-position: 0px 0px;
+  width: 300px;
+  height: 275px;
+}
+
+
+.body {
+	background: url("svgsprite.svg") 27.572625590465037% 84.8249914490936% no-repeat;
+	width: 45.07px;
+	height: 24.45px;
+}
+
+.headline_ef {
+	background: url("svgsprite.svg") 0 85.78745198463508% no-repeat;
+	width: 214.22px;
+	height: 72.5px;
+}
+
+.headwing {
+	background: url("svgsprite.svg") 5.292582929556466% 93.8140295140088% no-repeat;
+	width: 43.93px;
+	height: 28.63px;
+}
+
+.legal {
+	background: url("svgsprite.svg") 49.08685719091202% 74.06424797152395% no-repeat;
+	width: 108.53px;
+	height: 10.69px;
+}
+
+.logo_galaxys7edge {
+	background: url("svgsprite.svg") 31.22740524781341% 75.7918552036199% no-repeat;
+	width: 136px;
+	height: 21px;
+}
+
+.logo_samsung {
+	background: url("svgsprite.svg") 29.185286103542236% 79.6420581655481% no-repeat;
+	width: 88px;
+	height: 16px;
+}
+
+.penguin_shadow {
+	background: url("svgsprite.svg") 33.26363053239256% 83.37068579112506% no-repeat;
+	width: 42.5px;
+	height: 16.8px;
+}
+
+.scarf {
+	background: url("svgsprite.svg") 10.752185557633029% 91.87653597276396% no-repeat;
+	width: 30.44px;
+	height: 19.47px;
+}
+
+.slope {
+	background: url("svgsprite.svg") 0 0 no-repeat;
+	width: 822px;
+	height: 335px;
+}
+
+.snow {
+	background: url("svgsprite.svg") 14.438335624140947% 91.82063992789544% no-repeat;
+	width: 21.7px;
+	height: 19.2px;
+}
+
+.snow_final {
+	background: url("svgsprite.svg") 0 99.85053049422949% no-repeat;
+	width: 41.18px;
+	height: 54.89px;
+}
+
+.star {
+	background: url("svgsprite.svg") 37.31111111111112% 78.93569844789357% no-repeat;
+	width: 12px;
+	height: 12px;
+}
+

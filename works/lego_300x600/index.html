@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Banner</title>
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="ad.size" content="width=300,height=600">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" href="bundle.css">
+	</head>
+
+	<body>
+		<script>
+			var clickTag = "";
+		</script>
+		<div id="backup" onclick="window.open(window.clickTag)"></div>
+		<div id="ad_content" class="invisible">
+			
+			<div id="img4" class="sprite-jpg img4"></div>
+			<div id="img3" class="sprite-jpg img3"></div>
+			<div id="img2" class="sprite-jpg img2"></div>
+			<div id="img1" class="sprite-jpg img1"></div>
+			<div id="txt1" class="sprite-svg txt1 txt"></div>
+			<div id="txt2" class="sprite-svg txt2 txt"></div>
+			<div id="txt3" class="sprite-svg txt3 txt"></div>
+			<div id="ef_txt" class="txt">
+				<div id="ef1" class="sprite-svg ef1"></div>
+				<div id="ef2" class="sprite-svg ef2"></div>
+				<div id="ef3" class="sprite-svg ef3"></div>
+				<div id="ef4" class="sprite-svg ef4"></div>
+				<div id="ef5" class="sprite-svg ef5"></div>
+				<div id="ef6" class="sprite-svg ef6"></div>
+				<div id="ef7" class="sprite-svg ef7"></div>
+				<div id="ef8" class="sprite-svg ef8"></div>
+			</div>
+			<div id="branding" class="sprite-png branding"></div>
+			<div id="cta">
+				<div id="cta_txt" class="sprite-svg cta_txt"></div>	
+			</div>
+			<div id="legal" class="sprite-png legal"></div>
+		</div>
+		<!--[if !IE]><!-->
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.0/TweenMax.min.js"></script>
+			<script src="bundle.js"></script>
+		<!--<![endif]-->
+		<!--[if IE]><script>document.getElementById('backup').className = 'backup'; /*IE9 or below*/</script><![endif]-->
+	</body>
+</html>

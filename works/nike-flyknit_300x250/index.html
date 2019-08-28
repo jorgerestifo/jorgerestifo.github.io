@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Banner</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="ad.size" content="width=300,height=250">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+		<link rel="stylesheet" href="main-min.css">
+	</head>
+
+	<body>
+		<script>
+			var clickTag = 'http://www.nike.com/cl/es_la/c/running?gsns_cl_nike_041017_su17_omd_brm_rn_freerunflyknit_dual_chi';
+		</script>
+		<div id="ad_content" class="alpha-0">
+
+			<svg class="mysvg" width="300" height="250" >
+			    <defs> 
+			        <filter id="turb">
+			            <feTurbulence id="turbwave" type="fractalNoise" baseFrequency="0.01" numOctaves="1"
+			                result="turbulence_3" data-filterId="3" />
+			            <feDisplacementMap xChannelSelector="R" yChannelSelector="G" in="SourceGraphic" in2="turbulence_3" scale="15" />
+			        </filter>
+			    </defs>
+			    <image id="bg" xlink:href="bg.jpg" filter="url(#turb)" width="300" height="250" />
+			</svg>
+
+			<div id="placa"></div>
+			<div id="wrapper">
+				<div id="txt1" class="sprite-svg txt1"></div>
+				<div id="txt2" class="sprite-svg txt2"></div>
+				<div id="tilde" class="sprite-svg tilde"></div>
+				<div id="img1" class="sprite-jpg img1"></div>
+				<div id="img2" class="sprite-jpg img2"></div>
+			</div>
+
+			<div id="cta">
+				<div id="cta_txt" class="sprite-svg cta_txt"></div>
+				<div id="flecha" class="sprite-svg flecha"></div>
+			</div>
+
+			<div id="zapa" class="sprite-img zapa"></div>
+
+		</div>
+		<!-- Load scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
+		<script src="main-min.js"></script>
+	</body>
+</html>

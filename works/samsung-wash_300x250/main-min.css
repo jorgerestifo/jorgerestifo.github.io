@@ -1,0 +1,215 @@
+@charset "UTF-8";
+/* Modified Poor Man’s Reset
+ * -------------------------------------------------------
+ */
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+/* Utilities
+ * -------------------------------------------------------
+ */
+.alpha-0 {
+  visibility: hidden; }
+
+.gpu {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
+
+/* Variables
+ * -------------------------------------------------------
+ */
+/* Ad content
+ * -------------------------------------------------------
+ */
+#ad_content {
+  background: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  cursor: pointer;
+  overflow: hidden;
+  position: absolute;
+  width: 300px;
+  height: 250px; }
+  #ad_content div, #ad_content img, #ad_content li {
+    position: absolute; }
+
+#bg {
+  width: 300px;
+  height: 250px;
+  background: url("bg.jpg"); }
+
+#glow {
+  top: 141px;
+  left: 174px; }
+
+#bg_over {
+  width: 300px;
+  height: 250px;
+  background: url("bg_over.png"); }
+
+#logo {
+  top: 10px;
+  right: 10px; }
+
+#txt1, #txt2 {
+  top: 20px;
+  left: 20px; }
+
+#sprite {
+  top: 143px;
+  left: 154px; }
+
+#cta {
+  top: 66px;
+  left: 20px; }
+
+#reflection-top {
+  left: 178px;
+  top: 146px; }
+
+#reflection-bottom {
+  width: 45px;
+  height: 4px;
+  left: 186px;
+  top: 199px; }
+
+.sprite-png{
+  background-image: url('spritesheet.png');
+}
+
+.f00 {
+  background-position: -114px 0px;
+  width: 108px;
+  height: 110px;
+}
+.f01 {
+  background-position: -114px -232px;
+  width: 108px;
+  height: 110px;
+}
+.f02 {
+  background-position: -228px 0px;
+  width: 108px;
+  height: 110px;
+}
+.f03 {
+  background-position: 0px -116px;
+  width: 108px;
+  height: 110px;
+}
+.f04 {
+  background-position: -114px -116px;
+  width: 108px;
+  height: 110px;
+}
+.f05 {
+  background-position: -228px -116px;
+  width: 108px;
+  height: 110px;
+}
+.f06 {
+  background-position: -342px 0px;
+  width: 108px;
+  height: 110px;
+}
+.f07 {
+  background-position: -342px -116px;
+  width: 108px;
+  height: 110px;
+}
+.f08 {
+  background-position: 0px -232px;
+  width: 108px;
+  height: 110px;
+}
+.f09 {
+  background-position: 0px 0px;
+  width: 108px;
+  height: 110px;
+}
+.f10 {
+  background-position: -228px -232px;
+  width: 108px;
+  height: 110px;
+}
+.f11 {
+  background-position: -342px -232px;
+  width: 108px;
+  height: 110px;
+}
+.f12 {
+  background-position: -456px 0px;
+  width: 108px;
+  height: 110px;
+}
+.f13 {
+  background-position: -456px -116px;
+  width: 108px;
+  height: 110px;
+}
+.f14 {
+  background-position: -456px -232px;
+  width: 108px;
+  height: 110px;
+}
+.f15 {
+  background-position: 0px -348px;
+  width: 108px;
+  height: 110px;
+}
+.f16 {
+  background-position: -114px -348px;
+  width: 108px;
+  height: 110px;
+}
+.f17 {
+  background-position: -228px -348px;
+  width: 108px;
+  height: 110px;
+}
+.glow {
+  background-position: -342px -348px;
+  width: 77px;
+  height: 74px;
+}
+
+
+.sprite-svg {
+	background: url("svgsprite.svg") no-repeat;
+}
+
+.logo {
+	background-position: 0 98.96921017402946%;
+	width: 58.8px;
+	height: 10.3px;
+}
+
+.txt1 {
+	background-position: 0 76.98544698544698%;
+	width: 127.2px;
+	height: 36.9px;
+}
+
+.txt2 {
+	background-position: 0 0;
+	width: 183.28px;
+	height: 37.03px;
+}
+

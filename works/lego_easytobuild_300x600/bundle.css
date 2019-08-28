@@ -1,0 +1,310 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  font-size: 100%; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.alpha-0 {
+  opacity: 0; }
+
+.invisible {
+  visibility: hidden; }
+
+.none {
+  display: none; }
+
+.offstage {
+  position: absolute;
+  left: -4000px;
+  top: -4000px; }
+
+.gpu {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
+
+.smooth-animation {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0) rotate(0.1deg);
+          transform: translateZ(0) rotate(0.1deg); }
+
+.transform-reset {
+  -webkit-transform: none !important;
+      -ms-transform: none !important;
+          transform: none !important; }
+
+.anti-alias, .white-text-alias-mac {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.center-trans {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.middle-trans {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.center-middle-trans {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.center-middle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+#ad_content {
+  background: #6666ff;
+  color: white;
+  cursor: pointer;
+  border: 1px solid black;
+  font-family: 'Life Savers', cursive;
+  overflow: hidden;
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-filter: blur(0);
+          filter: blur(0);
+  white-space: nowrap; }
+  #ad_content div, #ad_content svg {
+    position: absolute; }
+
+.backup {
+  background: url("backup.jpg") -1px -1px no-repeat;
+  background-size: 300px 600px;
+  border: 1px solid black;
+  cursor: pointer;
+  position: absolute;
+  width: 300px;
+  height: 600px; }
+
+/* ---- */
+.frame-cont {
+  width: 300px;
+  height: 600px; }
+
+#flip {
+  left: -300px; }
+
+#branding, #branding-3, #branding-4 {
+  top: 530px; }
+
+#branding-ef {
+  top: 22px;
+  left: 22px;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left; }
+
+#logo_disney {
+  top: 19px;
+  right: 22px; }
+
+#chemistry {
+  top: 182px; }
+
+#f3-toy-a {
+  top: 200px;
+  left: 65px; }
+
+#f3-toy-b {
+  top: 247px;
+  left: 143px; }
+
+#f3-toy-c {
+  top: 184px;
+  left: 160px; }
+
+/* ---- */
+#frame1 {
+  background: #e31d1a; }
+
+#frame1b {
+  background: #bb120f; }
+
+#frame2 {
+  background: #4fbec7; }
+
+#frame2b {
+  background: #3da5ad; }
+
+#frame3 {
+  background: #17a453; }
+
+#frame3b {
+  background: #158f49; }
+
+#frame4 {
+  background: #9d8662; }
+
+#frame4b {
+  background: #b56e61; }
+
+/* ---- */
+#txt-1a {
+  top: 228px;
+  left: 48px; }
+
+#txt-1b {
+  font-size: 41px;
+  line-height: 38px;
+  top: 220px;
+  left: 145px; }
+
+#txt-2, #txt-3, #txt-4, #txt-ef {
+  font-size: 27px;
+  line-height: 29px;
+  text-align: center;
+  top: 410px; }
+
+#txt-legal {
+  font: 7px Helvetica, sans-serif;
+  left: 22px;
+  bottom: 10px; }
+
+#cta {
+  background: white;
+  border-radius: 5px;
+  color: #e31d1a;
+  font-size: 15px;
+  text-align: center;
+  width: 90px;
+  height: 32px;
+  top: 525px; }
+
+.sprite-jpg { background-image: url('sprite.jpg') }
+.bg-ef {
+  width: 300px;
+  height: 600px;
+  background-position: 0px 0px; }
+.bg-f4 {
+  width: 300px;
+  height: 600px;
+  background-position: -306px 0px; }
+@media (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 120dpi) {
+
+}
+
+
+.sprite-png { background-image: url('sprite.png') }
+.f3-shine-1 {
+  width: 300px;
+  height: 600px;
+  background-position: 0px 0px; }
+.f3-shine-2 {
+  width: 300px;
+  height: 600px;
+  background-position: -306px 0px; }
+.f3-shine-3 {
+  width: 300px;
+  height: 600px;
+  background-position: -612px 0px; }
+.f3-toy-a {
+  width: 157px;
+  height: 112px;
+  background-position: 0px -303px;
+  background-size: 456px 415px; }
+.f3-toy-b {
+  width: 84px;
+  height: 93px;
+  background-position: -160px -303px;
+  background-size: 456px 415px; }
+.f3-toy-c {
+  width: 68px;
+  height: 59px;
+  background-position: -247px -303px;
+  background-size: 456px 415px; }
+.logo_disney {
+  width: 70px;
+  height: 35px;
+  background-position: -318px -303px;
+  background-size: 456px 415px; }
+@media (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 120dpi) {
+
+}
+
+
+.sprite-svg {
+	background: url("sprite.svg") no-repeat;
+}
+
+.branding {
+	background-position: 85.29866058049197% 53.46850293292527%;
+	width: 85.23px;
+	height: 24.06px;
+}
+
+.chemistry {
+	background-position: 99.78216569461036% 0;
+	width: 234.38px;
+	height: 131.2px;
+}
+
+.frame {
+	background-position: 0 0;
+	width: 284px;
+	height: 573px;
+}
+
+.rollers {
+	background-position: 92.8893831359979% 31.946236820959843%;
+	width: 213.26px;
+	height: 162.31px;
+}
+
+.txt-1a {
+	background-position: 65.58891454965358% 62.582089552238806%;
+	width: 86px;
+	height: 104px;
+}
+

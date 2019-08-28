@@ -1,0 +1,226 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  font-size: 100%; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.center-trans {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%); }
+
+.middle-trans {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.center-middle-trans {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
+
+.center {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto; }
+
+.middle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto; }
+
+.center-middle {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto; }
+
+.alpha-0 {
+  opacity: 0; }
+
+.invisible {
+  visibility: hidden; }
+
+.none {
+  display: none; }
+
+.offstage {
+  position: absolute;
+  left: -4000px;
+  top: -4000px; }
+
+.gpu {
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
+
+.smooth-animation {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0) rotate(0.1deg);
+          transform: translateZ(0) rotate(0.1deg); }
+
+.transform-reset {
+  -webkit-transform: none !important;
+      -ms-transform: none !important;
+          transform: none !important; }
+
+.anti-alias, .white-text-alias-mac {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+#ad_content {
+  background: white;
+  cursor: pointer;
+  font-family: Helvetica, Arial, sans-serif;
+  overflow: hidden;
+  position: absolute;
+  width: 300px;
+  height: 250px; }
+  #ad_content div, #ad_content svg {
+    position: absolute; }
+
+.backup {
+  background: url("backup.jpg") -1px -1px no-repeat;
+  background-size: 300px 250px;
+  border: 1px solid black;
+  cursor: pointer;
+  position: absolute;
+  width: 300px;
+  height: 250px; }
+
+#background_dark {
+  width: 300px;
+  height: 250px;
+  background-color: #000;
+  opacity: 0.7; }
+
+#character {
+  top: 90px;
+  width: 174px;
+  height: 160px;
+  background-image: url("character.png"); }
+
+#eyes {
+  top: 69px;
+  left: 76px;
+  height: 11px;
+  width: 30px;
+  overflow: hidden;
+  border-radius: 4px; }
+
+#top_eyelid, #bottom_eyelid {
+  height: 50%;
+  width: 100%;
+  background-color: #f2d9c8;
+  top: -6px; }
+
+#bottom_eyelid {
+  top: 11px; }
+
+#text_1 {
+  top: 66px;
+  left: 75px; }
+
+#text_legal {
+  left: 23px;
+  bottom: 18px; }
+
+#product {
+  bottom: 10px; }
+
+#cta {
+  border: 1px solid white;
+  width: 160px;
+  height: 20px;
+  top: 93px; }
+
+#logo_lego {
+  top: 24px;
+  left: 24px; }
+
+#logo_wizard {
+  top: 16px;
+  right: 24px;
+  -webkit-transform: scale(0.8);
+      -ms-transform: scale(0.8);
+          transform: scale(0.8);
+  -webkit-transform-origin: right;
+      -ms-transform-origin: right;
+          transform-origin: right; }
+
+.sprite-png { background-image: url('sprite.png') }
+.background {
+  width: 300px;
+  height: 250px;
+  background-position: -336px 0px; }
+.background_2 {
+  width: 330px;
+  height: 250px;
+  background-position: 0px 0px; }
+.border {
+  width: 300px;
+  height: 250px;
+  background-position: 0px -256px; }
+.logo_lego {
+  width: 108px;
+  height: 28px;
+  background-position: -306px -456px; }
+.logo_wizard {
+  width: 57px;
+  height: 43px;
+  background-position: -558px -256px; }
+.product {
+  width: 245px;
+  height: 165px;
+  background-position: -306px -256px; }
+.text_1 {
+  width: 152px;
+  height: 21px;
+  background-position: -306px -428px; }
+.text_cta {
+  width: 139px;
+  height: 10px;
+  background-position: -464px -428px; }
+.text_cta_over {
+  width: 139px;
+  height: 10px;
+  background-position: -420px -456px; }
+.text_legal {
+  width: 150px;
+  height: 8px;
+  background-position: -420px -472px; }
+@media (-webkit-min-device-pixel-ratio: 1.25), (-o-min-device-pixel-ratio: 5/4), (min-resolution: 120dpi) {
+
+}
+

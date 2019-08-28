@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Banner</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="ad.size" content="width=300,height=250">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+
+  <body>
+    <script>
+      var clickTag = "#";
+    </script>
+
+    <div id="backup" onclick="window.open(window.clickTag || window.clickTag)"></div>
+    <div id="ad_content" class="invisible">
+
+      <div id="headline-1" class="headline center-middle-trans">Upgrade to<br>expandable storage.</div>
+        <div id="headline-2" class="headline center-middle-trans">Unless you’re giving up<br>all possessions.</div>
+
+          <div id="img" class="sprite-jpg img invisible"></div>
+
+          <div id="arrows" class="sprite-svg arrows center-trans">
+            <div id="arrows-bg">
+              <div id="headline_ef" class="center">Upgrade to</div>
+              <div id="logo" class="sprite-svg logo center"></div>
+              <div id="cta" class="sprite-png cta-up center">
+                <div id="cta-hover" class="sprite-png cta-hover invisible"></div>
+              </div>
+            </div>
+          </div>
+
+          <div id="branding" class="sprite-svg branding"></div>
+          <div id="branding-ef" class="sprite-svg branding_ef invisible"></div>
+        </div>
+
+        <!--[if !IE]><!-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+        <script src="bundle.js"></script>
+        <!--<![endif]-->
+        <!--[if IE]>
+    <script>
+      document.getElementById('backup').className = 'backup'; // IE9 or below
+    </script>
+    <![endif]-->
+  </body>
+
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Banner</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="ad.size" content="width=300,height=250">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+
+  <body>
+    <script>
+      var clickTag = "";
+    </script>
+    <div id="backup" onclick="window.open(window.clickTag || window.clickTAG)"></div>
+    <div id="ad_content" class="invisible">
+
+      <div id="bg4" class="sprite-jpg bg4"></div>
+      <div id="bg3" class="sprite-jpg bg3"></div>
+      <div id="bg2" class="sprite-jpg bg2"></div>
+      <div id="bg1" class="sprite-jpg bg1"></div>
+
+      <div id="box1">
+        <div id="txt1" class="sprite-svg txt1 center-middle"></div>
+      </div>
+      <div id="box2">
+        <div id="txt2" class="sprite-svg txt2 center-middle"></div>
+      </div>
+      <div id="box3">
+        <div id="txt3" class="sprite-svg txt3 center-middle"></div>
+      </div>
+      <div id="box4">
+        <div id="txt4" class="sprite-svg txt4 center-middle"></div>
+      </div>
+      <div id="cta">
+        <div id="cta_txt" class="sprite-svg cta_txt center-middle"></div>
+      </div>
+      <div id="branding" class="sprite-svg branding"></div>
+
+    </div>
+    <!--[if !IE]><!-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.0/TweenMax.min.js"></script>
+    <script src="bundle.js"></script>
+    <!--<![endif]-->
+    <!--[if IE]><script>document.getElementById('backup').className = 'backup'; /*IE9 or below*/</script><![endif]-->
+  </body>
+
+</html>

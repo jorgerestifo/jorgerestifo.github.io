@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Banner</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="ad.size" content="width=300,height=600">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+
+  <body>
+    <script>
+      var clickTag = "https://samsung.com/";
+    </script>
+
+    <div id="backup" onclick="window.open(window.clickTag || window.clickTag)"></div>
+    <div id="ad_content" class="invisible">
+
+      <div id="f1_device" class="sprite-jpg f1_device">
+        <div id="lens-wrapp">
+          <div id="closed-lens-1" class="sprite-png closed-lens-1 closed-lens"></div>
+          <div id="closed-lens-2" class="sprite-png closed-lens-2 closed-lens"></div>
+        </div>
+        <div id="flash" class="sprite-png flash"></div>
+      </div>
+
+      <div id="deviceCont">
+        <div id="device_shadow" class="sprite-png device_shadow"></div>
+        <div id="device" class="sprite-png device"></div>
+      </div>
+      <div id="branding" class="sprite-svg branding"></div>
+      <span id="text-headline">Smarter<br>camera</span>
+
+      <div id="logo" class="sprite-svg logo center"></div>
+      <span id="text-subline">The new super powerful Note</span>
+
+      <div id="cta" class="center">
+        <div id="cta-text" class="sprite-png cta-text center-middle"></div>
+        <div id="cta-text-hover" class="sprite-png cta-text-hover invisible center-middle"></div>
+      </div>
+      <div id="flash_screen"></div>
+    </div>
+
+    <!--[if !IE]><!-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="bundle.js"></script>
+    <!--<![endif]-->
+    <!--[if IE]>
+      <script>
+        document.getElementById('backup').className = 'backup'; // IE9 or below
+      </script>
+      <![endif]-->
+  </body>
+
+</html>

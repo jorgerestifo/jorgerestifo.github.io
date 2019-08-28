@@ -1,0 +1,239 @@
+html, body {
+  padding: 0;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none; }
+
+html {
+  font-size: 1em; }
+
+body {
+  font-size: 100%; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.alpha-0 {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; }
+
+.invisible {
+  visibility: hidden; }
+
+.none {
+  display: none; }
+
+.offstage {
+  position: absolute;
+  left: -4000px;
+  top: -4000px; }
+
+.gpu {
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
+
+.smooth-animation {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transform: translateZ(0) rotate(0.1deg);
+          transform: translateZ(0) rotate(0.1deg); }
+
+.transform-reset {
+  -webkit-transform: none !important;
+          transform: none !important; }
+
+#ad_content {
+  font-family: Arial, sans-serif;
+  border: 1px solid black;
+  overflow: hidden;
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  cursor: pointer; }
+  #ad_content div, #ad_content img, #ad_content p {
+    position: absolute;
+    zoom: 1; }
+
+.backup {
+  position: absolute;
+  width: 300px;
+  height: 600px;
+  background: url("backup.jpg") -1px -1px no-repeat;
+  background-size: 300px 600px;
+  border: 1px solid black;
+  cursor: pointer; }
+
+#legal {
+  left: 22px;
+  bottom: 22px; }
+
+.txt {
+  left: 22px;
+  top: 22px; }
+
+#branding {
+  right: 22px;
+  bottom: 22px; }
+
+#cta {
+  background-color: #e80c0b;
+  width: 126px;
+  height: 43px;
+  left: 22px;
+  top: 130px;
+  border-radius: 4px; }
+  #cta #cta_txt {
+    top: 16px;
+    left: 18px; }
+
+#ef_txt {
+  width: 169px;
+  height: 58px;
+  -webkit-transform: scale(1.14) translate(13px, 5px);
+          transform: scale(1.14) translate(13px, 5px); }
+  #ef_txt #ef7 {
+    left: 99px;
+    top: 7px; }
+  #ef_txt #ef6 {
+    left: 83px;
+    top: 7px; }
+  #ef_txt #ef5 {
+    left: 61px;
+    top: 6px; }
+  #ef_txt #ef4 {
+    left: 47px;
+    top: 0px; }
+  #ef_txt #ef3 {
+    left: 31px;
+    top: 6px; }
+  #ef_txt #ef2 {
+    left: 16px;
+    top: 0px; }
+  #ef_txt #ef1 {
+    left: -1px;
+    top: 1px; }
+  #ef_txt #ef8 {
+    left: 15px;
+    top: 28px; }
+
+.sprite-jpg { background-image: url(sprite.jpg) }
+.img1 {
+  width: 300px;
+  height: 600px;
+  background-position: 0px 0px; }
+.img2 {
+  width: 300px;
+  height: 600px;
+  background-position: -306px 0px; }
+.img3 {
+  width: 300px;
+  height: 600px;
+  background-position: -612px 0px; }
+.img4 {
+  width: 300px;
+  height: 600px;
+  background-position: -918px 0px; }
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+
+}
+
+
+.sprite-png { background-image: url(sprite.png) }
+.branding {
+  width: 78px;
+  height: 78px;
+  background-position: 0px 0px; }
+.legal {
+  width: 170px;
+  height: 29px;
+  background-position: -84px 0px; }
+@media (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+
+}
+
+
+.sprite-svg {
+	background: url("sprite.svg") no-repeat;
+}
+
+.cta_txt {
+	background-position: 97.7741345608172% 91.70663562281723%;
+	width: 89.41px;
+	height: 13.25px;
+}
+
+.ef1 {
+	background-position: 91.16043613707166% 34.01201113226893%;
+	width: 16.88px;
+	height: 23.19px;
+}
+
+.ef2 {
+	background-position: 83.95889763102454% 34.27306273062731%;
+	width: 15.41px;
+	height: 24.75px;
+}
+
+.ef3 {
+	background-position: 83.8792881093629% 44.98499070853385%;
+	width: 15.38px;
+	height: 18.13px;
+}
+
+.ef4 {
+	background-position: 77.20216216216217% 34.27306273062731%;
+	width: 16.75px;
+	height: 24.75px;
+}
+
+.ef5 {
+	background-position: 77.1487835443585% 45.00429020879016%;
+	width: 16.59px;
+	height: 18.22px;
+}
+
+.ef6 {
+	background-position: 90.50260114364332% 44.903686087990486%;
+	width: 15.41px;
+	height: 17.75px;
+}
+
+.ef7 {
+	background-position: 98.27690447400242% 34.01201113226893%;
+	width: 16.44px;
+	height: 23.19px;
+}
+
+.ef8 {
+	background-position: 0 99.54508693894056%;
+	width: 155.06px;
+	height: 30.16px;
+}
+
+.txt1 {
+	background-position: 0 0;
+	width: 247.22px;
+	height: 69.66px;
+}
+
+.txt2 {
+	background-position: 0 42.42645715329801%;
+	width: 178.53px;
+	height: 63.81px;
+}
+
+.txt3 {
+	background-position: 0 81.12198383273567%;
+	width: 171.78px;
+	height: 63.47px;
+}
+
