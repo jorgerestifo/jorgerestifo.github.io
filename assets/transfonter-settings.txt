@@ -1,0 +1,23 @@
+https://transfonter.org/
+
+Family support: Off ?
+Add local() rule: Off
+Fix vertical metrics: On ?
+Autohint font: Off
+Base64 encode: On (standard ads) Off (rich media DoubleClick, FlashTalking etc)
+
+Formats: WOFF
+
+Unicode ranges (minimal English, French, Italian, Spanish, German, Portugese):
+
+U+0020-007F, U+00A0-00A3, U+00A9, U+00AB, U+00AD-00AE, U+00BB, U+00BF-00C4, U+00C7-00CF, U+00D1-00D6, U+00D9-00DD, U+00DF-00E4, U+00E7-00EF, U+00F1-00F6, U+00F9-00FC, U+2010-2014, U+2018-2019, U+201C-201D, U+2026, U+20AC, U+2122
+
+
+Unicode ranges (English only no accents):
+
+U+0020-007F, U+00A3, U+00A9, U+00AB, U+00AD-00AE, U+2010-2014, U+2018-2019, U+201C-201D, U+2026, U+20AC, U+2122
+
+
+Unicode ranges (A-Z, a-z only):
+
+U+0020, U+0041-005A, U+0061-007A, U+2010-2014

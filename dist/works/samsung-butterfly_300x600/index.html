@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta name="ad.size" content="width=300,height=600">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<link rel="stylesheet" href="main.css">
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/easing/EasePack.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js"></script>
+	</head>
+
+	<body>
+		<script>
+			var clickTag = 'http://samsung.com';
+		</script>
+		<div id="ad_content" class="vis-off bg-black">
+			<div class="full-bleed-minus-border">
+				<div id="devices">
+					<div id="device" class="gpu">
+						<div id="device_screen" class="bg-black">
+							<div id="worm" class="caterpillar"></div>
+							<div id="fly_group" class="alpha0 gpu">
+								<div id="fly" class="butterfly"></div>
+							</div>
+						</div>
+						<div id="device_hand" class="gpu"><img src="device_hand.png"></div>
+					</div>
+					<div id="device2" class="gpu">
+						<div id="device2_screen" class="bg-white">
+							<div id="fly2" class="butterfly"></div>
+						</div>
+						<div id="device2_hand" class="gpu"><img src="device2_hand.png"></div>
+					</div>
+				</div>
+			</div>
+			<div id="whiteout" class="full-bleed bg-white alpha0"></div>
+			<div id="blackout_center" class="full-bleed bg-black alpha0"></div>
+			<div id="text1" class="sprite text1 alpha0"></div>
+			<div id="blackout_left" class="bg-black vis-off"></div>
+			<div id="blackout_right" class="bg-black vis-off"></div>
+			<div id="text2" class="sprite text2 alpha0"></div>
+			<div id="cta" class="alpha0">
+				<div id="cta_up" class="sprite cta-up center-absolute"></div>
+				<div id="cta_over" class="sprite cta-over center-absolute alpha0"></div>
+			</div>
+			<h4 id="legal">imágenes de<br>pantalla simuladas</h4>
+			<div id="logo" class="sprite logo alpha0"></div>
+			<div id="replay" class="alpha0"><div id="replay_arrow" class="sprite replay-arrow"></div></div>
+		</div>
+		<script src="main.js"></script>
+	</body>
+</html>

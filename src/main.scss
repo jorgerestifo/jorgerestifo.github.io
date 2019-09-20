@@ -1,0 +1,185 @@
+@import 'reset', 'utils','centering';
+
+#content {
+  background: white;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  overflow: hidden;
+  color:black;
+  width: 100%;
+  height: 100%;
+  // font-size: .8em;
+}
+
+img {
+  transform-origin: top left;
+  transform:scale(0.5);
+} 
+
+$color4 : #d4183c;
+$color3 : #ec6609;
+$color2 : #f1ae0f;
+$color1 : #0280af;
+
+iframe {
+  border: 0px;
+  pointer-events:none;
+}
+
+span {
+  color:white;
+}
+
+#header {
+  position: fixed;
+  top:0;
+  width: 100%;
+  background: black;
+  height: 80px;
+}
+
+#left_box,#right_box{
+ 
+  float: left;
+  // border: 1px solid black;
+}
+
+#right_box {
+
+  // border: 1px solid black;
+}
+
+#left_box {
+  margin:15px 25px;
+  // background:red;
+}
+
+#right_box {
+  background:red;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+#contact {
+  position: absolute;
+  right:5px;
+  bottom: 15px;
+}
+
+#in_logo {
+
+}
+
+#name {
+  font-size: 1.4em;
+}
+
+#contact {
+
+}
+
+#rm {
+  font-weight: lighter;
+}
+
+#description {
+  font-weight: 200;
+}
+
+#container-wrap {
+  width: 920px;
+  margin: auto;
+}
+
+#container {
+  display: flex;
+  flex-flow: column wrap;
+  width: 100%;
+  max-height: 5800px;
+  background: black;
+  margin: 100px auto;
+  // justify-content: space-around;
+}
+
+.ad {
+  // flex:auto;
+  cursor: pointer;
+  margin:2px;
+  // background: red;
+
+}
+
+#cta {
+  float: right;
+  color:white;
+  font-size: 1.5em;
+  margin: .5em;
+  text-align: right;
+  animation: cta-animation 2s;
+
+}
+
+.preloader {
+  width: 25px;
+  height: 25px;
+  background: red;
+  animation: loader-animation 2s infinite;
+  // display: none;
+  border-radius: 50%;
+}
+
+@keyframes loader-animation {
+  
+  0% {background: $color1;
+         transform:scale(1);
+      }
+  20% {background: $color1;
+         transform:scale(1);
+      }
+  25% { background: $color2;
+        transform:scale(1.2);
+      }
+  45% { background: $color2;
+        transform:scale(1.2);
+      }    
+  50% { background: $color3;
+        transform:scale(1.1);
+      }    
+  70% { background: $color3;
+        transform:scale(1.1);
+      }
+  75% { background: $color4;
+        transform:scale(1.4);
+      }
+  95% { background: $color4;
+        transform:scale(1.4);
+      }
+
+  100% {background: $color1;
+         transform:scale(1);
+      }            
+}
+
+@keyframes cta-animation {
+  
+  0% {font-size: 20em;
+      text-align: left;
+      }
+  49% {font-size: 20em;
+  }
+  50% {font-size: 10em;
+      }
+  99% {font-size: 10em;
+      } 
+  100% {font-size: 2em;
+      text-align: right;
+      }                 
+}

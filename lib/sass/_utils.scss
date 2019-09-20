@@ -1,0 +1,39 @@
+// Utilities
+.alpha-0 {
+  opacity: 0;
+  // -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; // ie8 (not covered by autoprefixer)
+}
+.invisible {
+  visibility: hidden; // still in layout
+}
+.none {
+  display: none; // remove from layout (document will re-flow)
+}
+
+.offstage {
+  position: absolute;
+  left: -4000px;
+  top: -4000px;
+}
+
+.transform-reset {
+  transform: none !important;
+}
+
+.anti-alias, .white-text-alias-mac {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.gpu {
+  // will-change: transform; // NOTE: removed due to this error in FF: Will-change memory consumption is too high...
+  backface-visibility: hidden; // this by itself will only effect the current element
+  transform: translateZ(0); // adding this will cause child elements also get GPU acceleration
+}
+
+@supports (-moz-appearance:meterbar) {
+  // Firefox hacks
+  .gpu {
+    transform: translateZ(0) rotate(0.02deg); // GPU on children + smooth jittery animation in Firefox
+  }
+}

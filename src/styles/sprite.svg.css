@@ -1,0 +1,5 @@
+.sprite-svg { background: url('sprite.svg') no-repeat; }
+.sprite-svg.in_logo {
+  background-position: 0 0;
+  width: 25.67px;
+  height: 25.82px; }
