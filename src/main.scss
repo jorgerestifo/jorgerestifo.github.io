@@ -23,10 +23,20 @@ $color1 : #0280af;
 iframe {
   border: 0px;
   pointer-events:none;
+  margin: auto;
+  transition: opacity 1s; 
 }
 
 span {
   color:white;
+}
+
+// .lazy-loading {
+//   opacity: 0;
+// }
+
+.lazy-loaded {
+  opacity: 1!important;
 }
 
 #header {

@@ -96,10 +96,15 @@ img {
 
 iframe {
   border: 0px;
-  pointer-events: none; }
+  pointer-events: none;
+  margin: auto;
+  transition: opacity 1s; }
 
 span {
   color: white; }
+
+.lazy-loaded {
+  opacity: 1 !important; }
 
 #header {
   position: fixed;
