@@ -13,6 +13,9 @@ function init() {
   function loadAds() {
     for (var i=0;i<urls.length;i++){
       var ifrm = document.createElement("iframe");
+      var preloader = document.createElement("DIV");
+        preloader.className = "preloader center-middle";
+        preloader.style.display = "none";
       // var img = document.createElement("IMG");
       var div = document.createElement("DIV");
      
@@ -28,13 +31,15 @@ function init() {
         div.className = "ad";
         ifrm.className = "ifrm";
         // div.addEventListener("mouseover", reloadAd);
+        div.appendChild(preloader);
         div.appendChild(ifrm);
+        
         // div.appendChild(t);
         container.appendChild(div);
         // var temp = document.getElementById(i);
-      
+        
 
-        iframeLoad(ifrm);
+        iframeLoad(div,ifrm);
     } 
 
     // function loadImg(img,div,ifrm) {
@@ -55,7 +60,7 @@ function init() {
     // }
     
 
-    function iframeLoad(iframe) {
+    function iframeLoad(div,iframe) {
          
         iframe.onload = function () {
             
@@ -67,11 +72,14 @@ function init() {
             
             iframe.style.width = width+"px";
             iframe.style.height = height+"px";
+            div.style.width = width+"px";
+            div.style.height = height+"px";
             iframe.style.display = "block";
             iframe.style.opacity = "0";
             if(iframe.id<1) {
               iframe.style.opacity = "1";
             }
+            
             // loader.style.display="none";
             // iframe.addEventListener("mouseover", reloadAd);
             // setTimeout(reloadAd,15000,iframe)
@@ -88,19 +96,18 @@ function init() {
     });
     });
 
-    // $(document).on('lazyloded', '.ifrm', function() {
-    // var $e = $(this);
-    // // do something with the loaded element...
-    // console.log('lazyshow', $e);
-    // TweenMax.from($e,1,{autoAlpha:0})
+    $(document).on('lazyshow', '.ifrm', function() {
+    var $e = $(this);
+    // do something with the loaded element...
+    // console.log('lazyshow', $e.parent().get(0).childNodes[0]);
+    $e.parent().get(0).childNodes[0].style.display = "none";
+    TweenMax.to($e,1,{autoAlpha:1})
+    });
 
-    // });
-
-    // // $(document).on('lazyload', '.ifrm', function() {
-    // // var $e = $(this);
-    // // // do something with the loaded element...
-    // // console.log('lazyshow', $e);
-    // // });
+    $(document).on('lazyload', '.ifrm', function() {
+    var $e = $(this);
+    $e.parent().get(0).childNodes[0].style.display = "block";
+    });
 
   }
 

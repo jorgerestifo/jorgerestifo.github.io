@@ -24,7 +24,7 @@ iframe {
   border: 0px;
   pointer-events:none;
   margin: auto;
-  transition: opacity 1s; 
+  // transition: opacity 1s; 
 }
 
 span {
@@ -36,7 +36,7 @@ span {
 // }
 
 .lazy-loaded {
-  opacity: 1!important;
+  // opacity: 1!important;
 }
 
 #header {
@@ -115,6 +115,7 @@ a {
 .ad {
   cursor: pointer;
   margin:0 auto 10px auto;
+  position: relative;
 }
 
 #description {
@@ -199,8 +200,8 @@ a {
 .preloader {
   width: 25px;
   height: 25px;
-  background: red;
-  animation: loader-animation 2s infinite;
+  // background: red;
+  animation: loader-animation 1s infinite;
   // display: none;
   border-radius: 50%;
 }
@@ -237,18 +238,3 @@ a {
       }            
 }
 
-@keyframes cta-animation {
-  
-  0% {font-size: 20em;
-      text-align: left;
-      }
-  49% {font-size: 20em;
-  }
-  50% {font-size: 10em;
-      }
-  99% {font-size: 10em;
-      } 
-  100% {font-size: 2em;
-      text-align: right;
-      }                 
-}

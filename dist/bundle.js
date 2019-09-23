@@ -8,7 +8,10 @@
 
     function loadAds() {
       for (var i = 0; i < urls.length; i++) {
-        var ifrm = document.createElement("iframe"); // var img = document.createElement("IMG");
+        var ifrm = document.createElement("iframe");
+        var preloader = document.createElement("DIV");
+        preloader.className = "preloader center-middle";
+        preloader.style.display = "none"; // var img = document.createElement("IMG");
 
         var div = document.createElement("DIV");
         ifrm.setAttribute("src", "works/" + urls[i] + "/index.html");
@@ -22,11 +25,12 @@
         div.className = "ad";
         ifrm.className = "ifrm"; // div.addEventListener("mouseover", reloadAd);
 
+        div.appendChild(preloader);
         div.appendChild(ifrm); // div.appendChild(t);
 
         container.appendChild(div); // var temp = document.getElementById(i);
 
-        iframeLoad(ifrm);
+        iframeLoad(div, ifrm);
       } // function loadImg(img,div,ifrm) {
       //   img.addEventListener("load", function() {
       //     // var preloader = document.createElement("DIV")
@@ -44,7 +48,7 @@
       // }
 
 
-      function iframeLoad(iframe) {
+      function iframeLoad(div, iframe) {
         iframe.onload = function () {
           var metaData = iframe.contentDocument,
               dimensionsStr = metaData.querySelector('meta[name="ad.size"]').content,
@@ -53,6 +57,8 @@
               height = parseInt(matched[3]);
           iframe.style.width = width + "px";
           iframe.style.height = height + "px";
+          div.style.width = width + "px";
+          div.style.height = height + "px";
           iframe.style.display = "block";
           iframe.style.opacity = "0";
 
@@ -76,17 +82,20 @@
           live: true // auto bind lazy loading to ajax loaded elements
 
         });
-      }); // $(document).on('lazyloded', '.ifrm', function() {
-      // var $e = $(this);
-      // // do something with the loaded element...
-      // console.log('lazyshow', $e);
-      // TweenMax.from($e,1,{autoAlpha:0})
-      // });
-      // // $(document).on('lazyload', '.ifrm', function() {
-      // // var $e = $(this);
-      // // // do something with the loaded element...
-      // // console.log('lazyshow', $e);
-      // // });
+      });
+      $(document).on('lazyshow', '.ifrm', function () {
+        var $e = $(this); // do something with the loaded element...
+        // console.log('lazyshow', $e.parent().get(0).childNodes[0]);
+
+        $e.parent().get(0).childNodes[0].style.display = "none";
+        TweenMax.to($e, 1, {
+          autoAlpha: 1
+        });
+      });
+      $(document).on('lazyload', '.ifrm', function () {
+        var $e = $(this);
+        $e.parent().get(0).childNodes[0].style.display = "block";
+      });
     }
 
     loadAds();
