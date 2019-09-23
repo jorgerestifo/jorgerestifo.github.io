@@ -110,66 +110,56 @@ span {
   top: 0;
   width: 100%;
   background: black;
-  height: 80px; }
+  height: 60px; }
 
 #left_box, #right_box {
   float: left; }
 
 #left_box {
-  margin: 15px 25px; }
+  width: 80%;
+  margin: 5px 10px; }
 
 #right_box {
-  background: red; }
+  width: 10%;
+  margin: 2px 0 0 8px; }
+
+#email {
+  display: none; }
 
 a {
   text-decoration: none;
-  color: black;
+  font-size: 1.4em;
+  color: #e6c820;
   display: inline-block;
   vertical-align: middle;
-  margin-right: 10px;
-  font-weight: 400;
-  text-transform: uppercase;
-  font-size: 0.8em; }
+  margin: 0px 0 0 12px; }
 
-#contact {
-  position: absolute;
-  right: 5px;
-  bottom: 15px; }
+#in_logo {
+  transform-origin: top left;
+  transform: scale(0.95);
+  margin-left: -1px; }
 
 #name {
-  font-size: 1.4em; }
+  font-size: 1.1em; }
 
 #rm {
   font-weight: lighter; }
 
-#description {
-  font-weight: 200; }
-
-#container-wrap {
-  width: 920px;
-  margin: auto; }
-
 #container {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-flow: column wrap;
-      flex-flow: column wrap;
-  width: 100%;
-  max-height: 5800px;
-  background: black;
-  margin: 100px auto; }
+  width: 100%; }
 
 .ad {
   cursor: pointer;
-  margin: 2px; }
+  margin: 0 auto 10px auto; }
 
-#cta {
-  float: right;
-  color: white;
-  font-size: 1.5em;
-  margin: .5em;
-  text-align: right;
-  animation: cta-animation 2s; }
+#description {
+  font-weight: 200;
+  font-size: 0.6em;
+  margin-top: 0.3em; }
+
+#container-wrap {
+  width: 320px;
+  margin: 60px auto; }
 
 .preloader {
   width: 25px;
