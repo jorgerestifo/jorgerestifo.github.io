@@ -86,12 +86,6 @@ a {
   margin:0px 0 0 12px;
 }
 
-#contact {
-
-  // position: absolute;
-  // right:0px;
-  // bottom: 15px;
-}
 
 #in_logo {
   transform-origin:top left;
@@ -235,5 +229,126 @@ a {
   100% {background: $color1;
          transform:scale(1);
       }            
+}
+
+@media only screen and (min-width: 600px) {
+  #container-wrap {
+    width: 630px;
+    margin: auto;
+  }
+
+  #container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    max-height: 8500px;
+    background: black;
+    margin: 100px auto;
+  }
+
+  .ad {
+    cursor: pointer;
+    margin:5px;
+  }
+
+  #name {
+    font-size: 1.4em;
+  }
+  #contact {
+    position: absolute;
+    right:5px;
+    bottom: 15px;
+  }
+
+  #header {
+    position: fixed;
+    top:0;
+    width: 100%;
+    background: black;
+    height: 80px;
+  }
+  #left_box {
+    margin:15px 25px;
+  }
+  #description {
+    font-weight: 200;
+    font-size: 0.8em;
+    margin-top: 0.3em;
+  }
+  #contact {
+    position: absolute;
+    right:15px;
+    bottom: 15px;
+  }
+  a {
+    font-size: 1.7em;
+  }
+}
+
+
+@media only screen and (min-width: 970px) {
+  #email {
+    display: block;
+  }
+  #email-icon {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.8em;
+  }
+  #container-wrap {
+    width: 935px;
+    margin: auto;
+  }
+
+  #container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    max-height: 5800px;
+    background: black;
+    margin: 100px auto;
+  }
+
+}  
+
+@media only screen and (min-width: 1290px) {
+  #email {
+    display: block;
+  }
+  #email-icon {
+    display: none;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 0.8em;
+  }
+  #container-wrap {
+    width: 1243px;
+    margin: auto;
+  }
+
+  #container {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    max-height: 4500px;
+    background: black;
+    margin: 100px auto;
+  }
+
 }
 

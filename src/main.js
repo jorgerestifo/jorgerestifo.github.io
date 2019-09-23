@@ -68,7 +68,7 @@ function init() {
     function iframeLoad(div,iframe) {
          
         iframe.onload = function () {
-            
+            $(window).trigger("lazyupdate");
             var metaData = iframe.contentDocument,
             dimensionsStr = metaData.querySelector('meta[name="ad.size"]').content,
             matched = dimensionsStr.match(/=(.*?),(.*?)=(.*?)$/),
@@ -81,9 +81,9 @@ function init() {
             div.style.height = height+"px";
             iframe.style.display = "block";
             iframe.style.opacity = "0";
-            if(iframe.id<1) {
-              iframe.style.opacity = "1";
-            }
+            // if(iframe.id<1) {
+            //   iframe.style.opacity = "1";
+            // }
             
             // loader.style.display="none";
             // iframe.addEventListener("mouseover", reloadAd);
