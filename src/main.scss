@@ -7,7 +7,6 @@
   color:black;
   width: 100%;
   height: 100%;
-  // font-size: .8em;
 }
 
 img {
@@ -24,11 +23,36 @@ iframe {
   border: 0px;
   pointer-events:none;
   margin: auto;
-  // transition: opacity 1s; 
 }
 
 span {
   color:white;
+}
+
+#abdLabel {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#adBlockDetected {
+  position: fixed;
+  width: 320px;
+  height: 150px;
+  background: black;
+  display: none;
+  border: 5px solid white;
+}
+
+.bgCover {
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.8;
+  position: fixed;
+  top:0px;
+  left:0px;
+  display: none;
 }
 
 
@@ -46,15 +70,8 @@ span {
   height: 60px;
 }
 
-#left_box,#right_box{
- 
+#left_box,#right_box{ 
   float: left;
-  // border: 1px solid black;
-}
-
-#right_box {
-
-  // border: 1px solid black;
 }
 
 #left_box {
@@ -64,9 +81,7 @@ span {
 
 #right_box {
   width: 10%;
-  // background:#999;
   margin:2px 0 0 8px;
-  // display: none;
 }
 
 #email {
@@ -114,7 +129,6 @@ a {
 #description {
   font-weight: 200;
   font-size: 0.6em;
-  // margin-top: 0.2em;
 }
 
 #container-wrap {
@@ -122,80 +136,10 @@ a {
   margin: 60px auto;
 }
 
-///////////////////////// desktop
-// #container-wrap {
-//   width: 920px;
-//   margin: auto;
-// }
-
-// #container {
-//   display: flex;
-//   flex-flow: column wrap;
-//   width: 100%;
-//   max-height: 5800px;
-//   background: black;
-//   margin: 100px auto;
-// }
-
-// .ad {
-//   cursor: pointer;
-//   margin:2px;
-// }
-
-// a {
-//   text-decoration: none;
-//   color: black;
-//   display: inline-block;
-//   vertical-align: middle;
-//   margin-right: 10px;
-//   font-weight: 400;
-//   text-transform: uppercase;
-//   font-size: 0.8em;
-// }
-// #name {
-//   font-size: 1.4em;
-// }
-// #contact {
-//   position: absolute;
-//   right:5px;
-//   bottom: 15px;
-// }
-
-// #header {
-//   position: fixed;
-//   top:0;
-//   width: 100%;
-//   background: black;
-//   height: 80px;
-// }
-// #left_box {
-//   margin:15px 25px;
-// }
-// #description {
-//   font-weight: 200;
-// }
-// #contact {
-//   position: absolute;
-//   right:5px;
-//   bottom: 15px;
-// }
-// a {
-//   text-decoration: none;
-//   color: black;
-//   display: inline-block;
-//   vertical-align: middle;
-//   margin-right: 10px;
-//   font-weight: 400;
-//   text-transform: uppercase;
-//   font-size: 0.8em;
-// }
-
 .preloader {
   width: 25px;
   height: 25px;
-  // background: red;
   animation: loader-animation 1s infinite;
-  // display: none;
   border-radius: 50%;
 }
 
