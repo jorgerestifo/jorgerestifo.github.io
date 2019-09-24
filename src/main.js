@@ -116,7 +116,6 @@ function init() {
                                 var containerWrap = document.getElementById("container-wrap");
                                 var bgCover = document.getElementById("bgCover");
                                 adBlockDetected.style.display = "block";
-                                window.addEventListener('scroll', noScroll);
                                 bgCover.style.display = "block";
                                 containerWrap.style.display = "none";
                                 iframe.remove();
@@ -131,11 +130,6 @@ function init() {
 
    function showReplay(elem) {
     setTimeout(function(){elem.style.display = "block"},replayTime)
-  }
-
-
-  function noScroll() {
-    window.scrollTo(0, 0);
   }
 
   var scrollableElement = document.body;
