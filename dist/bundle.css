@@ -293,7 +293,7 @@ a {
     background: black;
     margin: 100px auto; } }
 
-@media only screen and (min-width: 1290px) {
+@media only screen and (min-width: 1280px) {
   #email {
     display: block; }
   #email-icon {
