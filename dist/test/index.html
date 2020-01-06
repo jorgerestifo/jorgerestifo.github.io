@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>[300x250] Rich Media 3-7 yrs</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="ad.size" content="width=300,height=250">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+
+  <body>
+
+    <script>
+      document.write('<script src="'+ (window.API_URL || 'https://s1.adform.net/banners/scripts/rmb/Adform.DHTML.js?bv='+ Math.random()) +'"><\/script>');
+    </script>
+
+    <script>
+    clickTAGvalue = dhtml.getVar('clickTAG'); //banner will receive clickTAG value - if not defined, banner will land to example.com
+    landingpagetarget = dhtml.getVar('landingPageTarget', '_blank'); //landingPageTarget variable enables to change target from Adform system.
+    </script>
+
+    <div id="backup" onclick="window.open(clickTAGvalue, landingpagetarget)"></div>
+    <div id="ad_content" class="invisible">
+
+      <div id="video_player"></div>
+
+      <div id="cta" class="invisible">Start free trial</div>
+
+
+      <div id="char_click" class="invisible"></div>
+
+      <div id="click"></div>
+
+    </div>
+
+
+    <!--[if !IE]><!-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script src="bundle.js"></script>
+    <!--<![endif]-->
+    <!--[if IE]>
+      <script>
+        document.getElementById('backup').className = 'backup'; // IE9 or below
+      </script>
+      <![endif]-->
+  </body>
+
+</html>
