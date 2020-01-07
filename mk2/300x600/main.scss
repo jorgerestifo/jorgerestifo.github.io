@@ -1,0 +1,104 @@
+@import 'reset', 'utils', 'fonts';
+
+$ad-width: 300px;
+$ad-height: 600px;
+$ad-margin: 20px;
+
+#ad_content {
+  background: white;
+  color: white;
+  cursor: pointer;
+  border: 1px solid black;
+  font-family: 'GoogleSans-Medium', sans-serif;
+  line-height: 1;
+  overflow: hidden;
+  position: absolute;
+  width: $ad-width;
+  height: $ad-height;
+  // background: url('backup.jpg') -1px -1px no-repeat;
+
+
+  div, svg {
+    position: absolute;
+  }
+}
+
+.backup {
+  background: url('backup.jpg') -1px -1px no-repeat;
+  background-size: $ad-width $ad-height;
+  border: 1px solid black;
+  cursor: pointer;
+  position: absolute;
+  width: $ad-width;
+  height: $ad-height;
+}
+
+/* --- */
+
+#logo-game {
+  left: 182px;
+  top: 28px;
+}
+
+.logo-gpo {
+  left: 192px;
+  top: 540px;
+}
+
+/* --- */
+
+#prism, #prism div {
+  width: 900px;
+  height: 900px;
+  transform-origin: bottom left;
+  top: -232px;
+  left: 125px;
+
+  #red {
+    background: #e6394e;
+  }
+
+  #blue {
+    background: #52c0fa;
+  }
+
+  #yellow {
+    background: #fcc40c;
+  }
+
+  #green {
+    background: #2cd679;
+  }
+
+  #white {
+    background: white;
+  }
+}
+
+/* --- */
+
+#headline {
+  font-size: 34px;
+  top: 313px;
+  left: $ad-margin;
+}
+
+#subline {
+  font-size: 18px;
+  top: 391px;
+  left: $ad-margin;
+}
+
+#cta {
+  background: #00AFFF;
+  border-radius: 8px;
+  font-size: 15px;
+  padding: 12px 14px;
+  top: 530px;
+  left:$ad-margin;
+}
+
+
+.cta-ef {
+  top: 440px!important;
+}

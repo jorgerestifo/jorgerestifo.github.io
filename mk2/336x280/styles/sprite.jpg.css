@@ -1,0 +1,9 @@
+.sprite-jpg { background-image: url('sprite.jpg') }
+.sprite-jpg.background-blur {
+  width: 336px;
+  height: 280px;
+  background-position: 0px 0px; }
+.sprite-jpg.background {
+  width: 336px;
+  height: 280px;
+  background-position: -348px 0px; }

@@ -1,0 +1,16 @@
+.sprite-png { background-image: url('sprite.png') }
+.sprite-png.logo-game {
+  width: 87px;
+  height: 20px;
+  background-position: 0px 0px;
+  background-size: 90px 63px; }
+.sprite-png.logo-gpo-grey {
+  width: 82px;
+  height: 17px;
+  background-position: 0px -24px;
+  background-size: 90px 63px; }
+.sprite-png.logo-gpo-white {
+  width: 80px;
+  height: 16px;
+  background-position: 0px -45px;
+  background-size: 90px 63px; }

@@ -1,0 +1,5 @@
+.sprite-svg { background: url('sprite.svg') no-repeat; }
+.sprite-svg.logo-gpo {
+  background-position: 0 0;
+  width: 101.98px;
+  height: 22px; }
