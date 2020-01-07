@@ -1,52 +1,102 @@
 <!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Banner</title>
-        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-        <meta name="ad.size" content="width=336,height=280">
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
-        <link rel="stylesheet" href="bundle.css">
-    </head>
 
-    <body>
-        <script>
+  <head>
+    <meta charset="utf-8">
+    <title>Banner</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+    <meta name="ad.size" content="width=336,height=280">
+  </head>
+
+  <body>
+    <script>
             var clickTag = "#";
         </script>
 
-        <div id="backup" onclick="window.open(window.clickTag || window.clickTag)"></div>
-        <div id="ad_content" class="invisible">
-            
-            <video id="video" autoplay muted poster="poster.jpg"></video>
-            <div id="prism">
-                <div id="red"></div>
-                <div id="yellow"></div>
-                <div id="green"></div>
-                <div id="blue"></div>
-                <div id="white"></div>
-            </div>
-            
-            <div id="logo-game" class="sprite-png logo-game"></div>
-            
-            <div id="logo-gpo-grey" class="sprite-png logo-gpo-grey logo-gpo invisible"></div>
-            <div id="logo-gpo-white" class="sprite-png logo-gpo-white logo-gpo"></div>
+    <div id="backup" onclick="window.open(window.clickTag || window.clickTag)"></div>
+    <div id="ad_content" class="invisible">
 
-            
-            <div id="headline">Drivers<br>ready!</div>
-           
-            <div id="cta" class="anti-alias">Download now</div>
-        </div>
+      <video id="video" autoplay muted poster="poster.jpg"></video>
+      <div id="prism">
+        <div id="red"></div>
+        <div id="yellow"></div>
+        <div id="green"></div>
+        <div id="blue"></div>
+        <div id="white"></div>
+      </div>
 
-        <!--[if !IE]><!-->
-        <!-- include lib/include/videoFocus.js -->
+      <div id="logo-game" class="sprite-png logo-game"></div>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
-        <script src="bundle.js"></script>
-        <!--<![endif]-->
-        <!--[if IE]>
+      <div id="logo-gpo-grey" class="sprite-png logo-gpo-grey logo-gpo invisible"></div>
+      <div id="logo-gpo-white" class="sprite-png logo-gpo-white logo-gpo"></div>
+
+
+      <div id="headline">Drivers<br>ready!</div>
+
+        <div id="cta" class="anti-alias">Download now</div>
+      </div>
+
+      <!--[if !IE]><!-->
+      <script>
+// Set the name of the hidden property and the change event for visibility
+var hidden, visibilityChange; 
+if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and later support 
+  hidden = "hidden";
+  visibilityChange = "visibilitychange";
+} else if (typeof document.msHidden !== "undefined") {
+  hidden = "msHidden";
+  visibilityChange = "msvisibilitychange";
+} else if (typeof document.webkitHidden !== "undefined") {
+  hidden = "webkitHidden";
+  visibilityChange = "webkitvisibilitychange";
+}
+ 
+var videoElement = document.getElementById("video");
+
+// If the page is hidden, pause the video;
+// if the page is shown, play the video
+function handleVisibilityChange() {
+  if (document[hidden]) {
+    videoElement.pause();
+  } else {
+    videoElement.play();
+  }
+}
+
+document.addEventListener(visibilityChange, handleVisibilityChange, false);
+
+
+// Warn if the browser doesn't support addEventListener or the Page Visibility API
+// if (typeof document.addEventListener === "undefined" || hidden === undefined) {
+//   console.log("This demo requires a browser, such as Google Chrome or Firefox, that supports the Page Visibility API.");
+// } else {
+//   // Handle page visibility change   
+//   document.addEventListener(visibilityChange, handleVisibilityChange, false);
+    
+//   // When the video pauses, set the title.
+//   // This shows the paused
+//   videoElement.addEventListener("pause", function(){
+//     document.title = 'Paused';
+//   }, false);
+    
+//   // When the video plays, set the title.
+//   videoElement.addEventListener("play", function(){
+//     document.title = 'Playing'; 
+//   }, false);
+
+// }
+    </script>
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+      <script src="bundle.js"></script>
+      <!--<![endif]-->
+      <!--[if IE]>
         <script>
             document.getElementById('backup').className = 'backup'; // IE9 or below
         </script>
         <![endif]-->
-    </body>
+  </body>
+
 </html>
