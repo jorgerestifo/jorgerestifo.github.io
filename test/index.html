@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Banner</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+    <meta name="ad.size" content="width=300,height=250">
+  </head>
+
+  <body>
+    <script>
+            var clickTag = "";
+        </script>
+
+    <div id="backup" onclick="window.open(window.clickTag || window.clickTag)"></div>
+    <div id="ad_content" class="invisible">
+      <div id="background" class="sprite-jpg background"></div>
+      <div id="background-blur" class="sprite-jpg background-blur"></div>
+
+      <div id="prism">
+        <div id="red"></div>
+        <div id="yellow"></div>
+        <div id="green"></div>
+        <div id="blue"></div>
+        <div id="white"></div>
+      </div>
+
+      <div id="logo-game" class="sprite-png logo-game"></div>
+      <div id="logo-gpo" class="sprite-svg logo-gpo"></div>
+
+      <div id="main-character" class="sprite-png main-character"></div>
+
+
+      <div id="headline">Drivers<br>ready!</div>
+        <div id="cta" class="anti-alias">Download now</div>
+      </div>
+
+      <!--[if !IE]><!-->
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+      <script src="bundle.js"></script>
+      <!--<![endif]-->
+      <!--[if IE]>
+        <script>
+            document.getElementById('backup').className = 'backup'; // IE9 or below
+        </script>
+        <![endif]-->
+  </body>
+
+</html>

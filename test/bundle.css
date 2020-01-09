@@ -64,8 +64,7 @@ a img, :link img, :visited img {
   overflow: hidden;
   position: absolute;
   width: 300px;
-  height: 250px;
-  background: url("backup.jpg") -1px -1px no-repeat; }
+  height: 250px; }
   #ad_content div, #ad_content svg {
     position: absolute; }
 
@@ -80,27 +79,20 @@ a img, :link img, :visited img {
 
 /* --- */
 #logo-game {
-  left: 193px;
+  left: 45px;
   top: 15px; }
 
-.logo-game-ef {
-  left: 22px !important; }
-
-#logo-ef {
+#logo-gpo {
   left: 193px;
-  top: 15px; }
-
-.logo-gpo {
-  left: 191px;
-  top: 213px; }
+  top: 211px; }
 
 /* --- */
 #prism, #prism div {
   width: 600px;
   height: 600px;
   transform-origin: bottom left;
-  top: -216px;
-  left: 101px; }
+  top: -227px;
+  left: 105px; }
   #prism #red, #prism div #red {
     background: #e6394e; }
   #prism #blue, #prism div #blue {
@@ -118,8 +110,8 @@ a img, :link img, :visited img {
 
 /* --- */
 #headline {
-  font-size: 28px;
-  top: 127px;
+  font-size: 33px;
+  top: 114px;
   left: 16px; }
 
 #cta {
@@ -127,22 +119,31 @@ a img, :link img, :visited img {
   border-radius: 8px;
   font-size: 15px;
   padding: 12px 14px;
-  top: 192px;
+  top: 190px;
   left: 16px; }
 
+.sprite-jpg { background-image: url('sprite.jpg') }
+.sprite-jpg.background-blur {
+  width: 300px;
+  height: 250px;
+  background-position: 0px 0px; }
+.sprite-jpg.background {
+  width: 300px;
+  height: 250px;
+  background-position: -312px 0px; }
 .sprite-png { background-image: url('sprite.png') }
 .sprite-png.logo-game {
   width: 87px;
   height: 20px;
+  background-position: -165px 0px;
+  background-size: 255px 171px; }
+.sprite-png.main-character {
+  width: 160px;
+  height: 171px;
   background-position: 0px 0px;
-  background-size: 90px 63px; }
-.sprite-png.logo-gpo-grey {
-  width: 82px;
-  height: 17px;
-  background-position: 0px -24px;
-  background-size: 90px 63px; }
-.sprite-png.logo-gpo-white {
-  width: 80px;
-  height: 16px;
-  background-position: 0px -45px;
-  background-size: 90px 63px; }
+  background-size: 255px 171px; }
+.sprite-svg { background: url('sprite.svg') no-repeat; }
+.sprite-svg.logo-gpo {
+  background-position: 0 0;
+  width: 96.95px;
+  height: 21px; }
