@@ -68,73 +68,62 @@
     init: function init() {
       log.debug = false; // set to false before publishing
 
-      var dom = domIds(); ////////////////////////////////////////////////////// ANIMATION //////////////////////////////////////////////////////
+      var dom = domIds(),
+          tl = new TimelineMax({
+        paused: true,
+        onComplete: addRollover
+      }); ////////////////////////////////////////////////////// ANIMATION //////////////////////////////////////////////////////
 
       function frameStart() {
         if (es5()) {
           frame0();
+          var video = document.getElementById('video');
+          video.src = '300x250_video.mp4';
+          video.load();
+          video.pause();
+
+          video.oncanplay = function () {
+            tl.play();
+            video.play();
+          }; // video.addEventListener('loadeddata', function() {
+          //   tl.play()
+          //   video.play()
+          // }, false);
+
         } else {
           dom.backup.classList.add('backup');
         }
       }
 
-      function float() {
-        var tl = new TimelineMax({
-          yoyo: true,
-          repeat: 1
-        });
-        tl.to('#main-character', 2, {
-          rotation: 1,
-          x: 2,
-          ease: Cubic.easeInOut
-        });
-        return tl;
-      }
-
       function frame0() {
-        var tl = new TimelineMax({
-          onComplete: addRollover
-        });
-        tl.from('#background-blur', 0.5, {
-          autoAlpha: 0
-        }, '+=0.5').from('#prism', 1, {
+        tl.from('#prism', 1, {
           x: '+=250',
           y: '-=10',
           ease: Cubic.easeInOut
-        }).staggerTo(['#red', '#yellow', '#blue', '#white', '#green'], 1, {
+        }, "+=4").staggerTo(['#red', '#yellow', '#blue', '#white', '#green'], 1, {
           cycle: {
-            rotation: [-240, -240, -330, -240, -150]
+            rotation: [-242, -242, -332, -242, -152]
           },
           ease: Cubic.easeInOut
-        }, 0.04, '-=1.25').from('#main-character', 0.5, {
-          scale: 0.6,
-          x: '+=600',
-          ease: Cubic.easeinOut
-        }, '-=0.6').to('#main-character', 0.25, {
-          rotation: '-2',
-          transformOrigin: 'bottom left',
-          repeat: 1,
-          yoyo: true
-        }, '-=0.25').from(['#logo-game', '#logo-gpo', '#headline', '#cta'], 1, {
+        }, 0.04, '-=1.25').set("#logo-game", {
+          className: "+=logo-game-ef"
+        }, "-=0.5").set("#logo-gpo-white", {
           autoAlpha: 0
-        }).add(float(), '-=1').from(['#background', '#background-blur'], 4, {
-          scale: 1.25,
-          rotation: -5,
-          ease: Cubic.easeOut
-        }, 0);
+        }, "-=0.5").set("#logo-gpo-grey", {
+          autoAlpha: 1
+        }, "-=0.5").from('#headline', 1, {
+          autoAlpha: 0
+        });
         dom.ad_content.classList.remove('invisible');
       } ////////////////////////////////////////////////////// EVENT HANDLERS //////////////////////////////////////////////////////
 
 
       function addRollover() {
+        videoEnded = true;
         dom.ad_content.addEventListener('mouseenter', function () {
           TweenLite.to('#cta', 0.25, {
             boxShadow: '0 2px 4px rgb(30, 140, 80)'
           });
-
-          if (!TweenMax.isTweening('#main-character')) {
-            float();
-          }
         });
         dom.ad_content.addEventListener('mouseleave', function () {
           TweenLite.to('#cta', 0.25, {
