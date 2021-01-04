@@ -4,20 +4,20 @@
   function init() {
     var content = document.getElementById("content"),
         loader = document.getElementById("loader"),
-        replayTime = 30000,
-        noTweenUp = true,
+        // replayTime = 100,
+    noTweenUp = true,
         noTweenDown = true,
         urls = ["ally-home2-300x600", "ally-home1-300x250", "samsung-butterfly_300x600", "samsung-display_300x600", "samsung-bogo_300x600", "toonix_300x250", "ally-12month_300x600", "battery_300x600", "celestial_300x250", "lego_300x600", "lego_easytobuild_300x600", "lego-harrypotter_300x250", "lego-juniors_300x600", "Rihanna-teaser-A_300x250", "multitask_300x600", "nike-flyknit_300x250", "nike-janosky_300x250", "nike-nrc_300x600", "nike-tempo_300x250", "nike-vomero_300x600", "personal-prepago_300x250", "Rihanna-teaser-B_300x250", "samsung_tab_300x600", "samsung-battery_300x600", "samsung-camera-300x600", "samsung-cnn-money_300x250", "samsung-diplo_300x250", "samsung-emoji_300x600", "samsung-gametime_300x250", "samsung-holliday_300x250", "ally-11month_300x250", "samsung-holliday-mobile_300x600", "samsung-memory_300x250", "samsung-ocean_300x250", "samsung-s9_300x600", "samsung-wash_300x250", "storage-300x600", "svedka-300x600", "samsung-pay_300x250"];
 
     function loadAds() {
       for (var i = 0; i < urls.length; i++) {
         var ifrm = document.createElement("iframe");
-        var preloader = document.createElement("DIV");
-        var replay = document.createElement("div");
-        preloader.className = "preloader center-middle";
-        replay.className = "fas fa-play-circle center-middle-trans replay";
-        preloader.style.display = "none";
-        replay.style.display = "none";
+        var preloader = document.createElement("DIV"); // var replay = document.createElement("div");
+
+        preloader.className = "preloader center-middle"; // replay.className = "fas fa-play-circle center-middle-trans replay";
+
+        preloader.style.display = "none"; // replay.style.display = "none";
+
         var div = document.createElement("DIV");
         ifrm.setAttribute("src", "works/" + urls[i] + "/index.html");
         ifrm.id = i;
@@ -25,8 +25,8 @@
         div.className = "ad";
         ifrm.className = "ifrm";
         div.addEventListener("click", reloadAd);
-        div.appendChild(preloader);
-        div.appendChild(replay);
+        div.appendChild(preloader); // div.appendChild(replay);
+
         div.appendChild(ifrm);
         container.appendChild(div);
         iframeLoad(div, ifrm);
@@ -63,14 +63,13 @@
         });
       });
       $(document).on('lazyshow', '.ifrm', function () {
-        var $e = $(this);
-        var replay = $e.parent().get(0).childNodes[1];
+        var $e = $(this); // let replay =  $e.parent().get(0).childNodes[1];
+
         var preloader = $e.parent().get(0).childNodes[0];
         preloader.style.display = "none";
         TweenMax.to($e, 1, {
           autoAlpha: 1
-        });
-        showReplay(replay);
+        }); // showReplay(replay);
       });
       $(document).on('lazyload', '.ifrm', function () {
         var $e = $(this);

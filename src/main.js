@@ -3,7 +3,7 @@ function init() {
   var content = document.getElementById("content"),
       loader = document.getElementById("loader"),
       index,
-      replayTime = 30000,
+      // replayTime = 100,
       noTweenUp = true,
       noTweenDown = true,
       urls = ["ally-home2-300x600","ally-home1-300x250","samsung-butterfly_300x600","samsung-display_300x600","samsung-bogo_300x600","toonix_300x250","ally-12month_300x600","battery_300x600","celestial_300x250","lego_300x600","lego_easytobuild_300x600","lego-harrypotter_300x250","lego-juniors_300x600","Rihanna-teaser-A_300x250",
@@ -16,11 +16,11 @@ function init() {
     for (var i=0;i<urls.length;i++){
       var ifrm = document.createElement("iframe");
       var preloader = document.createElement("DIV");
-      var replay = document.createElement("div");
+      // var replay = document.createElement("div");
         preloader.className = "preloader center-middle";
-        replay.className = "fas fa-play-circle center-middle-trans replay";
+        // replay.className = "fas fa-play-circle center-middle-trans replay";
         preloader.style.display = "none";
-        replay.style.display = "none";
+        // replay.style.display = "none";
       var div = document.createElement("DIV");
      
         ifrm.setAttribute("src", "works/"+urls[i]+"/index.html");
@@ -30,7 +30,7 @@ function init() {
         ifrm.className = "ifrm";
         div.addEventListener("click", reloadAd);
         div.appendChild(preloader);
-        div.appendChild(replay);
+        // div.appendChild(replay);
         div.appendChild(ifrm);
         container.appendChild(div);
         
@@ -70,11 +70,11 @@ function init() {
 
     $(document).on('lazyshow', '.ifrm', function() {
     var $e = $(this);
-    let replay =  $e.parent().get(0).childNodes[1];
+    // let replay =  $e.parent().get(0).childNodes[1];
     let preloader =  $e.parent().get(0).childNodes[0];
     preloader.style.display = "none";
     TweenMax.to($e,1,{autoAlpha:1})
-    showReplay(replay);
+    // showReplay(replay);
     });
 
     $(document).on('lazyload', '.ifrm', function() {
