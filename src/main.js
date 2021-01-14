@@ -1,4 +1,5 @@
 function init() {
+  
 
   var content = document.getElementById("content"),
       loader = document.getElementById("loader"),
