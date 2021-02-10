@@ -1,5 +1,13 @@
 function init() {
-  
+
+  var DEBUG = false;
+if(!DEBUG){
+    if(!window.console) window.console = {};
+    var methods = ["log", "debug", "warn", "info"];
+    for(var i=0;i<methods.length;i++){
+        console[methods[i]] = function(){};
+    }
+}
 
   var content = document.getElementById("content"),
       loader = document.getElementById("loader"),
@@ -55,6 +63,11 @@ function init() {
             div.style.height = height+"px";
             iframe.style.display = "block";
             iframe.style.opacity = "0";
+
+            let iframeWindow = iframe.contentWindow;
+
+            // console.log(iframeWindow);
+            iframeWindow.console.log = function() {};
         }
     }
 
@@ -91,10 +104,13 @@ function init() {
   loadAds();
 
   function reloadAd(e) {
-    let replay = e.currentTarget.childNodes[1];
-    replay.style.display = "none";
-    e.currentTarget.childNodes[2].contentWindow.location.reload();
-    showReplay(replay);
+    // console.log(e.currentTarget.childNodes[1]);
+    // let replay = e.currentTarget.childNodes[1];
+    // replay.style.display = "none";
+    $(window).trigger("lazyupdate");
+    e.currentTarget.childNodes[1].contentWindow.location.reload();
+
+    // showReplay(replay);
   }
 
   function detect() {

@@ -2,6 +2,16 @@
   'use strict';
 
   function init() {
+
+    {
+      if (!window.console) window.console = {};
+      var methods = ["log", "debug", "warn", "info"];
+
+      for (var i = 0; i < methods.length; i++) {
+        console[methods[i]] = function () {};
+      }
+    }
+
     var content = document.getElementById("content"),
         loader = document.getElementById("loader"),
         // replayTime = 100,
@@ -46,6 +56,9 @@
           div.style.height = height + "px";
           iframe.style.display = "block";
           iframe.style.opacity = "0";
+          var iframeWindow = iframe.contentWindow; // console.log(iframeWindow);
+
+          iframeWindow.console.log = function () {};
         };
       } ////////////////////////////// LAZY LOADING UTILS ///////////////////////////////
 
@@ -82,10 +95,11 @@
     loadAds();
 
     function reloadAd(e) {
-      var replay = e.currentTarget.childNodes[1];
-      replay.style.display = "none";
-      e.currentTarget.childNodes[2].contentWindow.location.reload();
-      showReplay(replay);
+      // console.log(e.currentTarget.childNodes[1]);
+      // let replay = e.currentTarget.childNodes[1];
+      // replay.style.display = "none";
+      $(window).trigger("lazyupdate");
+      e.currentTarget.childNodes[1].contentWindow.location.reload(); // showReplay(replay);
     }
 
     function detect() {
@@ -113,12 +127,6 @@
           iframe.remove();
         }
       }, 2000);
-    }
-
-    function showReplay(elem) {
-      setTimeout(function () {
-        elem.style.display = "block";
-      }, replayTime);
     }
 
     var scrollableElement = document.body;
