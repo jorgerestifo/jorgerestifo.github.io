@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <title>Banner</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="ad.size" content="width=300,height=600">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <link rel="stylesheet" href="bundle.css">
+  </head>
+
+  <body>
+    <script>
+      var clickTag = "https://www.lego.com/";
+    </script>
+    <div id="backup" onclick="window.open(window.clickTag || window.clickTag)"></div>
+    <div id="ad_content" class="invisible">
+      <div id="photo"></div>
+      <div id="branding" class="sprite-png branding"></div>
+      <p id="text-legal">Jurassic World&trade; &amp; &copy; Universal Studios and Amblin<br>Entertainment, Inc. &copy; 2018 The LEGO group</p>
+      <div id="dino" class="invisible">
+        <div id="dino_body" class="sprite-png dino-body"></div>
+      </div>
+      <div id="wall">
+        <div id="dino-head">
+          <div id="dino_skull" class="sprite-png dino-skull"></div>
+          <div id="dino_jaw"></div>
+        </div>
+      </div>
+      <div id="text-1" class="sprite-png text-1 invisible"></div>
+      <div id="text-ef" class="sprite-png text-ef invisible"></div>
+      <div id="cta" class="invisible">
+        <div id="cta-text" class="sprite-svg cta-text middle"></div>
+        <div id="cta-arrow" class="sprite-svg cta-arrow middle"></div>
+      </div>
+    </div>
+    <!--[if !IE]><!-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenMax.min.js"></script>
+      <script src="bundle.js"></script>
+    <!--<![endif]-->
+    <!--[if IE]><script>document.getElementById('backup').className = 'backup'; /*IE9 or below*/</script><![endif]-->
+  </body>
+</html>
