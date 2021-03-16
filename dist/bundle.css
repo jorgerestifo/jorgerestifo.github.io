@@ -105,6 +105,13 @@ iframe {
 span {
   color: white; }
 
+#cta {
+  position: fixed;
+  width: 100%;
+  top: 70px;
+  text-align: center;
+  font-size: 0.75em; }
+
 #abdLabel {
   width: 100%;
   text-align: center;
@@ -174,7 +181,8 @@ a {
   font-weight: lighter; }
 
 #container {
-  width: 100%; }
+  width: 100%;
+  margin: 100px auto; }
 
 .ad {
   cursor: pointer;
@@ -187,7 +195,7 @@ a {
 
 #container-wrap {
   width: 320px;
-  margin: 60px auto; }
+  margin: auto; }
 
 .preloader {
   width: 25px;
@@ -225,6 +233,8 @@ a {
     transform: scale(1); } }
 
 @media only screen and (min-width: 600px) {
+  #cta {
+    top: 90px; }
   #container-wrap {
     width: 630px;
     margin: auto; }
@@ -234,9 +244,9 @@ a {
     -ms-flex-flow: column wrap;
         flex-flow: column wrap;
     width: 100%;
-    max-height: 9100px;
+    max-height: 10000px;
     background: black;
-    margin: 100px auto; }
+    margin: 120px auto; }
   .ad {
     cursor: pointer;
     margin: 5px; }
@@ -290,7 +300,7 @@ a {
     width: 100%;
     max-height: 6400px;
     background: black;
-    margin: 100px auto; } }
+    margin: 120px auto; } }
 
 @media only screen and (min-width: 1280px) {
   #email {
@@ -317,7 +327,7 @@ a {
     width: 100%;
     max-height: 5100px;
     background: black;
-    margin: 100px auto; } }
+    margin: 120px auto; } }
 
 .sprite-svg { background: url('sprite.svg') no-repeat; }
 .sprite-svg.in_logo {
